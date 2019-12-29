@@ -1,4 +1,4 @@
-#N canvas 101 49 1048 749 10;
+#N canvas 206 193 1048 749 10;
 #X floatatom 180 -92 5 0 0 0 per_bank - -;
 #X obj 252 -108 hradio 15 1 0 1 empty empty Bank -25 7 0 10 -262144
 -1 -1 0;
@@ -122,7 +122,7 @@
 0;
 #X obj 1 18 cnv 15 40 15 empty empty Selector 5 7 0 10 -233017 -66577
 0;
-#N canvas 0 50 450 545 AdjustActiveSelectedColor 0;
+#N canvas 419 77 450 545 AdjustActiveSelectedColor 0;
 #X obj 47 10 inlet;
 #X floatatom 47 37 5 0 0 0 - - -;
 #X obj 46 56 t f;
@@ -357,7 +357,7 @@ state;
 #X obj 91 367 - 1;
 #X obj 129 535 t a a;
 #X obj 189 377 t b b;
-#X msg 133 175 10;
+#X msg 133 175 20;
 #X connect 0 0 2 0;
 #X connect 0 0 34 0;
 #X connect 1 0 3 0;
@@ -619,15 +619,15 @@ state;
 #X connect 18 0 20 1;
 #X connect 18 0 8 0;
 #X connect 19 0 20 2;
-#X restore 73 330 pd AdjustActiveSelectedColor;
-#X obj 56 116 s padnum;
+#X restore 75 359 pd AdjustActiveSelectedColor;
+#X obj 53 141 s padnum;
 #X floatatom 56 76 5 0 0 0 - - -;
-#X obj 55 95 t f;
-#X obj 73 302 t f f f b;
+#X obj 52 120 t f;
+#X obj 75 331 t f f f b;
 #X obj 56 -130 inlet;
-#X obj 60 22 cnv 7 7 7 empty 0-seqbtn-recv empty -2 11 0 10 -44926
+#X obj 60 22 cnv 7 7 7 empty 0-seqbtn-recv empty -2 11 0 10 -262144
 -1 0;
-#X obj 75 22 cnv 7 7 7 empty 1-seqbtn-recv empty 20 12 0 10 -44926
+#X obj 75 22 cnv 7 7 7 empty 1-seqbtn-recv empty 20 12 0 10 -262144
 -66577 0;
 #X obj 90 22 cnv 7 7 7 empty 2-seqbtn-recv empty 20 12 0 10 -262144
 -66577 0;
@@ -755,19 +755,19 @@ state;
 -66577 0;
 #X obj 152 75 outlet;
 #X obj 152 46 clone -s 1 OBSeqSelectorClone 64;
-#X obj 73 275 + 1;
+#X obj 75 304 + 1;
 #X obj 56 -45 t b;
 #X msg 56 -22 0;
 #X obj 110 -48 t b;
 #X obj 56 -103 t b b;
-#X obj 107 215 pack f f;
-#X obj 107 238 unpack f f;
-#X obj 107 166 t b;
+#X obj 109 244 pack f f;
+#X obj 109 267 unpack f f;
+#X obj 109 195 t b;
 #X obj 56 45 t f f f b;
-#X msg 107 189 0;
+#X msg 109 218 0;
 #X obj 110 -73 delay 10;
 #X obj 56 -72 delay 5;
-#X obj 107 142 delay 20;
+#X obj 109 171 delay 20;
 #X connect 0 0 99 0;
 #X connect 21 0 22 0;
 #X connect 22 0 20 0;
@@ -2951,11 +2951,11 @@ state;
 #X obj 308 12 inlet;
 #X obj 498 98 text define -k \$0-readtemppatfile;
 #A set 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 1 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 0 0 0 1 0 1 0 0 0 1 0
-1 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+1 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3806,9 +3806,9 @@ state;
 #X obj 790 994 s $project_thencut;
 #X obj 668 736 text get \$0-newmastersongsettings 0 9;
 #X obj 668 583 text define -k \$0-newmastersongsettings;
-#A set tmpProject 0 0 0 0 0 0 0 0 40 \; 1 2 loop \; 1 2 loop \; 1 2
-loop \; 1 2 loop \; 1 2 loop \; 1 2 loop \; 1 2 loop \; 1 2 loop \;
-1 2 loop \; 1 2 loop \;;
+#A set tmpProject 0 0 0 0 0 0 0 0 102.4 \; 1 1 0 \; 1 1 0 \; 1 1 0
+\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
+1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;;
 #N canvas 423 0 765 670 setnewsongsettings 0;
 #X obj 162 244 t b f;
 #X obj 214 247 t b f;
@@ -4464,7 +4464,7 @@ value" used to create the pack to which it is connected.;
 #X msg 250 -42 80;
 #X obj 258 -21 s OBbpm;
 #X obj 347 -171 clone -s 1 MultiSamplePlayer 64;
-#N canvas 44 130 1087 404 OBAlphaSongBuilder 0;
+#N canvas 50 147 1087 404 OBAlphaSongBuilder 0;
 #X obj 1 5 cnv 15 35 15 empty empty Song 5 7 0 10 -262144 -66577 0
 ;
 #X obj 1 22 cnv 15 40 15 empty empty Play 5 7 0 10 -262144 -66577 0
@@ -4638,7 +4638,7 @@ value" used to create the pack to which it is connected.;
 #X obj 2 250 cnv 15 960 245 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X obj 590 229 cnv 15 100 15 display_songlength-send display_songlength-recv
-Length:40_secs 3 7 0 10 -262144 -1 0;
+Length:102.4_secs 3 7 0 10 -262144 -1 0;
 #X obj 402 5 cnv 15 600 15 status-send status-recv Ready 3 7 0 10 -191407
 -66577 0;
 #X msg 180 -120 64;
@@ -4721,11 +4721,11 @@ Length:40_secs 3 7 0 10 -262144 -1 0;
 #X connect 10 0 0 0;
 #X connect 11 0 4 0;
 #X coords 0 -1 1 1 117 19 2 0 0;
-#X restore 189 227 pd SaveSongPlaylist_Btn;
+#X restore 209 550 pd SaveSongPlaylist_Btn;
 #X obj 4 229 cnv 15 25 15 empty empty Page 3 7 0 10 -262144 -1 0;
 #X obj 440 569 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 441 623 s projectplaystate;
+#X obj 441 592 s projectplaystate;
 #X msg 440 544 1;
 #X msg 476 542 0;
 #X obj 37 627 hradio 15 1 0 2 songpages-send songpages-recv Song_Pages
@@ -4970,11 +4970,15 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X obj 1051 273 t f;
 #X obj 111 773 s songbank;
 #X obj 111 749 t f;
-#X obj 507 600 s selsongitem;
-#X msg 509 540 1, f 5;
+#X msg 521 509 1, f 5;
 #X obj 625 557 s pattnum;
-#X obj 508 568 t f;
 #X obj 4 253 OBWaveEditor;
+#X obj 374 621 s emode;
+#X msg 375 589 0;
+#X obj 312 614 s emode;
+#X msg 313 582 1;
+#X obj 522 569 s selsongitem;
+#X obj 522 544 t f;
 #X connect 0 0 3 0;
 #X connect 1 0 5 0;
 #X connect 2 0 1 0;
@@ -5006,16 +5010,19 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X connect 30 1 14 0;
 #X connect 30 2 15 0;
 #X connect 32 0 51 0;
+#X connect 32 0 84 0;
 #X connect 33 0 52 0;
 #X connect 34 0 20 1;
 #X connect 34 0 52 0;
-#X connect 34 0 85 0;
+#X connect 34 0 84 0;
 #X connect 43 0 0 0;
 #X connect 44 0 54 0;
 #X connect 45 0 54 2;
 #X connect 49 0 50 0;
 #X connect 51 0 49 0;
+#X connect 51 0 88 0;
 #X connect 52 0 49 0;
+#X connect 52 0 90 0;
 #X connect 53 0 54 1;
 #X connect 54 0 55 0;
 #X connect 54 1 57 0;
@@ -5033,7 +5040,9 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X connect 79 0 83 0;
 #X connect 81 0 80 0;
 #X connect 83 0 82 0;
-#X connect 85 0 86 0;
-#X connect 85 0 87 0;
-#X connect 87 0 84 0;
+#X connect 84 0 85 0;
+#X connect 84 0 92 0;
+#X connect 88 0 87 0;
+#X connect 90 0 89 0;
+#X connect 92 0 91 0;
 #X coords 0 -1 1 1 1022 498 2 0 0;

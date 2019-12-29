@@ -1,4 +1,4 @@
-#N canvas 25 129 1276 678 10;
+#N canvas -101 110 1276 678 10;
 #X obj 13 -193 text size \$0-sequences;
 #X obj 13 -73 text get \$0-sequences;
 #X obj 14 179 s swing-recv;
@@ -8,12 +8,12 @@
 #X obj 14 109 int;
 #X msg 14 156 label Swing:\$1;
 #X obj 401 46 text define -k \$0-sequences;
-#A set 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 1 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 0 0 0 1 0 1 0 0 0 1 0
-1 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+#A set 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -215,23 +215,9 @@
 #X symbolatom 765 -70 20 0 0 0 - - -;
 #X text 686 -68 project name;
 #X obj 792 266 text define -k \$0-newmastermixerfile;
-#A set 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+#A set 0 0 0.5 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0.5 0.38 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A#4_Kick_SP.wav
+\; 0 0 0.5 0.28 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_A1_Snare_SP.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
@@ -452,10 +438,27 @@
 #X f 26;
 #X text 1120 404 Send new master mixer track data;
 #X obj 1114 340 text define -k \$0-newmastersongsettings;
-#A set tmpProject 0 0 0 0 0 0 0 0 40 \; 1 2 loop \; 1 2 loop \; 1 2
-loop \; 1 2 loop \; 1 2 loop \; 1 2 loop \; 1 2 loop \; 1 2 loop \;
-1 2 loop \; 1 2 loop \;;
-#N canvas 322 142 646 630 readsongsettingsdata 1;
+#A set tmpProject 0 0 0 0 0 0 0 0 34.5 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1
+0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;
+1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;;
+#N canvas 322 142 646 630 readsongsettingsdata 0;
 #X obj 32 15 inlet;
 #X obj 227 18 inlet;
 #X obj 108 13 r projectsavestate;
@@ -897,10 +900,10 @@ to remove song settings.;
 #X connect 2 0 4 0;
 #X connect 3 0 1 0;
 #X restore 596 -257 pd OBdefaultpatbank;
-#N canvas 513 115 572 495 OBCheckEditState 0;
+#N canvas 271 331 572 495 OBCheckEditState 0;
 #X floatatom 213 36 5 0 0 0 - - -;
 #X obj 310 8 r emodestate;
-#X obj 265 138 spigot 0;
+#X obj 267 149 spigot 0;
 #X obj 310 36 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 7 73 Minus 1 to find the real index;
@@ -908,14 +911,12 @@ to remove song settings.;
 #X floatatom 268 201 5 0 0 0 - - -;
 #X obj 212 17 r padnum;
 #X obj 264 116 t f;
-#N canvas -55 448 450 369 ccheckifzero 0;
+#N canvas -2 393 450 369 ccheckifzero 0;
 #X obj 88 69 inlet;
 #X obj 88 435 outlet;
 #X floatatom 88 93 5 0 0 0 - - -;
 #X obj 88 158 change;
 #X obj 88 211 t b;
-#X msg 88 232 0;
-#X obj 190 360 - 1;
 #X obj 133 214 t b;
 #X obj 133 287 pack f f;
 #X obj 177 253 t f;
@@ -923,7 +924,7 @@ to remove song settings.;
 #X floatatom 192 338 5 0 0 0 - - -;
 #X msg 133 234 0;
 #X obj 133 254 t f;
-#X obj 243 296 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 220 425 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 95 267 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -931,51 +932,76 @@ to remove song settings.;
 #X obj 89 125 == 1;
 #X obj 88 186 == 0;
 #X obj 134 191 == 1;
-#X floatatom 201 165 5 0 0 0 - - -;
+#X msg 88 232 1;
+#X obj 302 362 - 1;
+#X obj 240 216 t b;
+#X obj 240 289 pack f f;
+#X obj 284 255 t f;
+#X obj 242 320 unpack f f;
+#X floatatom 299 340 5 0 0 0 - - -;
+#X msg 240 236 0;
+#X obj 240 256 t f;
+#X obj 295 386 t f b;
+#X obj 238 150 > 2;
+#X obj 237 171 change;
+#X obj 237 193 == 1;
 #X connect 0 0 2 0;
-#X connect 2 0 9 0;
-#X connect 2 0 17 0;
-#X connect 3 0 18 0;
-#X connect 3 0 19 0;
-#X connect 3 0 20 0;
-#X connect 4 0 5 0;
-#X connect 5 0 1 0;
-#X connect 5 0 15 0;
-#X connect 6 0 16 0;
-#X connect 7 0 12 0;
-#X connect 8 0 10 0;
-#X connect 9 0 8 1;
-#X connect 10 1 11 0;
+#X connect 2 0 7 0;
+#X connect 2 0 15 0;
+#X connect 2 0 22 0;
+#X connect 2 0 28 0;
+#X connect 3 0 16 0;
+#X connect 3 0 17 0;
+#X connect 4 0 18 0;
+#X connect 5 0 10 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 1;
+#X connect 8 1 9 0;
+#X connect 9 0 14 0;
+#X connect 10 0 11 0;
 #X connect 11 0 6 0;
-#X connect 12 0 13 0;
-#X connect 13 0 8 0;
-#X connect 16 0 1 0;
-#X connect 16 1 14 0;
-#X connect 17 0 3 0;
-#X connect 18 0 4 0;
-#X connect 19 0 7 0;
-#X restore 264 85 pd ccheckifzero;
-#X obj 266 245 s checkedpadnum;
-#X obj 150 246 s earlypadnumcheck;
+#X connect 14 0 1 0;
+#X connect 14 1 12 0;
+#X connect 15 0 3 0;
+#X connect 16 0 4 0;
+#X connect 17 0 5 0;
+#X connect 18 0 1 0;
+#X connect 18 0 13 0;
+#X connect 19 0 27 0;
+#X connect 20 0 25 0;
+#X connect 21 0 23 0;
+#X connect 22 0 21 1;
+#X connect 23 1 24 0;
+#X connect 24 0 19 0;
+#X connect 25 0 26 0;
+#X connect 26 0 21 0;
+#X connect 27 0 1 0;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X connect 30 0 20 0;
+#X restore 370 75 pd ccheckifzero;
+#X obj 268 268 s checkedpadnum;
+#X obj 109 242 s earlypadnumcheck;
 #X obj 373 246 s emodecheckedvalue;
-#X obj 267 223 t f;
+#X obj 267 246 t f;
 #X obj 268 179 t f;
-#X floatatom 150 201 5 0 0 0 - - -;
-#X obj 150 220 t f;
-#X connect 0 0 9 0;
+#X floatatom 109 197 5 0 0 0 - - -;
+#X obj 109 216 t f;
+#X obj 267 225 - 1;
+#X connect 0 0 8 0;
 #X connect 1 0 3 0;
 #X connect 2 0 14 0;
 #X connect 3 0 2 1;
 #X connect 3 0 12 0;
-#X connect 6 0 13 0;
+#X connect 6 0 17 0;
 #X connect 7 0 0 0;
 #X connect 8 0 2 0;
 #X connect 8 0 15 0;
-#X connect 9 0 8 0;
 #X connect 13 0 10 0;
 #X connect 14 0 6 0;
 #X connect 15 0 16 0;
 #X connect 16 0 11 0;
+#X connect 17 0 13 0;
 #X restore 71 368 pd OBCheckEditState;
 #X f 32;
 #N canvas -8 -8 1280 686 OBSendSteps 0;
@@ -1331,6 +1357,7 @@ f f f f f f f f f f, f 179;
 #X obj 125 374 + 1;
 #X obj 130 416 t f;
 #X floatatom 249 186 5 0 0 0 - - -;
+#X floatatom 179 423 5 0 0 0 - - -;
 #X connect 0 0 7 0;
 #X connect 0 0 12 0;
 #X connect 0 0 24 0;
@@ -1360,6 +1387,7 @@ f f f f f f f f f f, f 179;
 #X connect 25 0 26 0;
 #X connect 26 0 19 0;
 #X connect 27 0 21 0;
+#X connect 27 0 29 0;
 #X restore 1039 -171 pd OBGetProjectPlayState2;
 #N canvas 400 295 827 730 OBSendSongSettings 0;
 #X obj 121 104 list trim;
@@ -1380,7 +1408,7 @@ f f f f f f f f f f, f 179;
 #X connect 7 2 3 0;
 #X connect 7 2 8 0;
 #X restore 1114 421 pd OBSendSongSettings;
-#N canvas 0 283 485 573 OBGetSongSettingsIndex 0;
+#N canvas 3 283 482 573 OBGetSongSettingsIndex 0;
 #X msg 68 153 0;
 #X obj 83 108 t b p;
 #X obj 19 50 inlet;
@@ -1411,6 +1439,7 @@ f f f f f f f f f f, f 179;
 #X obj 295 267 t b;
 #X obj 345 286 t f;
 #X floatatom 369 373 5 0 0 0 - - -;
+#X obj 39 349 s colorchangeItemIndex;
 #X connect 0 0 7 0;
 #X connect 1 0 0 0;
 #X connect 1 1 6 0;
@@ -1427,6 +1456,7 @@ f f f f f f f f f f, f 179;
 #X connect 12 1 0 0;
 #X connect 13 1 14 0;
 #X connect 14 0 4 0;
+#X connect 14 0 28 0;
 #X connect 15 0 13 0;
 #X connect 16 0 18 0;
 #X connect 17 0 25 0;
@@ -1436,7 +1466,6 @@ f f f f f f f f f f, f 179;
 #X connect 21 0 26 0;
 #X connect 22 0 24 0;
 #X connect 23 0 22 0;
-#X connect 24 1 9 0;
 #X connect 24 1 27 0;
 #X connect 25 0 23 0;
 #X connect 26 0 22 1;
@@ -1542,12 +1571,12 @@ f f f f f f f f f f, f 179;
 #X obj 156 40 t b p;
 #X msg 156 70 0;
 #X obj 156 16 text define -k \$0-velocities;
-#A set 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 1 1 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0
-1 0 \; 1 1 0 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0
-0 0 \; 1 1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
-1 0 \; 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A set 1 0 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 0 1 1 1 0 1 0 0 0 1 0 1 0
+1 0 \; 1 0 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 0 1 1 1 0 1 0 0 0 1 0 1 0
+1 0 \; 1 0 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 0 1 1 1 0 1 0 0 0 1 0 1 0
+1 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
