@@ -2,8 +2,9 @@ OverBlast ReadMe Document
 
 Known Bugs
 
-A lot of red messages when Overblast first starts.
-Click Create_New button to create temp defaults then close and reopen Overblast
+Recently fix but incase these errors show again. A lot of red messages when Overblast
+first starts indicating pattern or velocity file are missing you should do the following.
+Click Create_New button to create temp defaults then close and reopen Overblast.
 
 
 Pattern Selector -
@@ -43,11 +44,17 @@ Sequencer -
 
 Metronome -
 
-- Red error messages in pd due to r checkpadnum = 0. Red messages>>>> text set: line number (-1) < 0
+- Red error messages in pd due to [r checkpadnum] = 0 inside the metronome patch. Red messages>>>> text set: line number (-1) < 0
 
 
 
 - Recent Fixes and additions
 
-Now the playlist will now increment when playing.
+Fixes 12/30/2019
+
+Default files are now generated correctly when Overblast is run for the first time.
+Now the playlist will now increment when playing and continue past 16 song items.
+
+Fixes 12/28/2019
 Sample Editor is avalible to chop and edit wave samples.
+

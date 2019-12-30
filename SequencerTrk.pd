@@ -48,7 +48,7 @@ empty -2 -8 0 10 -162280 -1 -1 0 1;
 #X obj 0 1 cnv 15 73 50 empty empty empty 20 12 0 14 -128992 -66577
 0;
 #X obj 6 4 hsl 60 13 0.1 1 0 0 \$1-softvalue-send \$1-softvalue-recv
-Soft:0.3 2 7 0 10 -90881 -1 -1 1311 1;
+Soft:0.2 2 7 0 10 -90881 -1 -1 1211 1;
 #X obj 6 19 hsl 60 13 0.2 1 0 0 \$1-medvalue-send \$1-medvalue-recv
 Med:0.5 2 7 0 10 -123526 -1 -1 2212 1;
 #X obj 6 35 hsl 60 13 0.3 1 0 0 \$1-hardvalue-send \$1-hardvalue-recv

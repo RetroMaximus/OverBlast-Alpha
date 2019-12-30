@@ -4,7 +4,7 @@
 #X obj 57 34 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 2 6 vsl 15 46 0 0.9 0 0 \$1-vol-send \$1-vol-recv Seq:1 17 40
-0 10 -262144 -1 -1 2300 1;
+0 10 -262144 -1 -1 1500 1;
 #X obj 28 5 tgl 10 0 \$0-trkmute-send \$0-trkmute-recv M -8 5 0 10
 -99865 -1 -1 0 1;
 #X obj 49 5 tgl 10 0 \$0-trksolo-send \$0-trksolo-recv S -8 5 0 10
@@ -80,7 +80,7 @@
 #X obj 190 -44 r padnum;
 #X obj 190 -21 t f;
 #X msg 357 322 symbol MultiSamplePlayer-\$1;
-#X obj 565 94 soundfiler;
+#X obj 565 105 soundfiler;
 #X floatatom 565 129 20 0 0 0 - - -;
 #X obj 568 173 s previewSize;
 #X msg 565 67 read -resize \$1 Preview;
@@ -231,6 +231,7 @@
 #X obj 587 148 t f;
 #X obj 666 47 print;
 #X msg 531 261 label Seq:\$1;
+#X floatatom 184 38 5 0 0 0 - - -;
 #X connect 0 0 19 0;
 #X connect 0 0 39 0;
 #X connect 1 0 14 0;
@@ -259,11 +260,10 @@
 #X connect 23 0 24 0;
 #X connect 24 0 2 0;
 #X connect 25 0 26 0;
-#X connect 26 0 17 0;
+#X connect 26 0 45 0;
 #X connect 27 0 16 1;
 #X connect 28 0 29 0;
 #X connect 29 0 42 0;
-#X connect 31 0 28 0;
 #X connect 33 0 31 0;
 #X connect 34 0 33 0;
 #X connect 34 0 43 0;
@@ -273,4 +273,5 @@
 #X connect 40 0 39 1;
 #X connect 42 0 30 0;
 #X connect 44 0 6 0;
+#X connect 45 0 17 0;
 #X coords 0 -1 1 1 84 60 2 0 0;
