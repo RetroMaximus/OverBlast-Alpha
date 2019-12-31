@@ -52,9 +52,9 @@ Metronome -
 
 Fixes 12/30/2019
 
-Default files are now generated correctly when Overblast is run for the first time.
-Now the playlist will now increment when playing and continue past 16 song items.
+- Default files are now generated correctly when Overblast is run for the first time.
+- Now the playlist will now increment when playing and continue past 16 song items.
 
 Fixes 12/28/2019
-Sample Editor is avalible to chop and edit wave samples.
+- Sample Editor is avalible to chop and edit wave samples.
 
