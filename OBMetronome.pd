@@ -8,14 +8,14 @@
 #X obj 14 109 int;
 #X msg 14 156 label Swing:\$1;
 #X obj 402 98 text define -k \$0-sequences;
-#A set 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0
-1 0 \; 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
-1 0 \; 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0
-1 0 \; 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0
-0 0 \; 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1
-1 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A set 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0
+0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -214,10 +214,10 @@
 #X symbolatom 765 -70 20 0 0 0 - - -;
 #X text 686 -68 project name;
 #X obj 792 266 text define -k \$0-newmastermixerfile;
-#A set 0 0 0.5 0.3 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Percussion/1_A2_Perc_SP.wav
-\; 0 0 0.5 0.42 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A2_Kick_SP.wav
-\; 0 0 0.5 0.42 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_C#4_Snare_SP.wav
-\; 0 0 0.5 0.28 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Hats&Shakers/1_A#3_Hat_SP.wav
+#A set 0 0 0.5 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0.5 0.32 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A4_Kick_SP.wav
+\; 0 0 0.5 0.32 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A4_Kick_SP.wav
+\; 0 0 0.5 0.34 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_A2_Snare_SP.wav
 \; 0 0 0.5 0.16 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Rides&Cymbals/1_C#2_Cymbal_SP.wav
 \; 0 0 0.5 0.48 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Hats&Shakers/1_D#5_Hat_SP.wav
 \; 0 0 0.5 0.48 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Percussion/1_B1_Perc_SP.wav
@@ -437,7 +437,7 @@
 #X f 26;
 #X text 1120 404 Send new master mixer track data;
 #X obj 1114 340 text define -k \$0-newmastersongsettings;
-#A set tmpProject 0 0 0 0 0 0 0 0 102.4 \; 1 1 0 \; 2 1 0 \; 1 1 0
+#A set 1 1 0 \; 1 1 0 \; 2 1 0 \; 1 1 0 \; 3 1 0 \; 1 1 0 \; 1 1 0
 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
@@ -458,7 +458,7 @@
 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;;
+\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;;
 #N canvas 322 142 646 630 readsongsettingsdata 0;
 #X obj 32 15 inlet;
 #X obj 227 18 inlet;
@@ -742,7 +742,7 @@ to remove song settings.;
 #X obj 180 353 s metronomeData;
 #X obj 125 250 r OBbpm;
 #X obj 362 409 vsl 15 50 0 0.9 0 0 feel empty 16th-note-feel 0 -9 0
-10 -262144 -1 -1 537 1;
+10 -262144 -1 -1 410 1;
 #X obj 255 308 s ticklength16;
 #X obj 363 369 t b f;
 #N canvas 0 50 450 300 OBFeelGroove 0;
@@ -983,7 +983,7 @@ to remove song settings.;
 #X connect 2 0 4 0;
 #X connect 3 0 1 0;
 #X restore 596 -257 pd OBdefaultpatbank;
-#N canvas 437 224 572 495 OBCheckEditState 1;
+#N canvas 437 224 572 495 OBCheckEditState 0;
 #X floatatom 213 36 5 0 0 0 - - -;
 #X obj 310 8 r emodestate;
 #X obj 264 147 spigot 0;
@@ -1472,7 +1472,7 @@ f f f f f f f f f f, f 179;
 #X connect 27 0 21 0;
 #X connect 27 0 29 0;
 #X restore 1039 -171 pd OBGetProjectPlayState2;
-#N canvas 400 295 827 730 OBSendSongSettings 0;
+#N canvas 259 130 827 730 OBSendSongSettings 0;
 #X obj 121 104 list trim;
 #X obj 121 203 s $project_pattern;
 #X obj 202 234 s $project_loops;
@@ -1491,7 +1491,7 @@ f f f f f f f f f f, f 179;
 #X connect 7 2 3 0;
 #X connect 7 2 8 0;
 #X restore 1114 421 pd OBSendSongSettings;
-#N canvas 3 283 482 573 OBGetSongSettingsIndex 0;
+#N canvas -7 234 482 573 OBGetSongSettingsIndex 1;
 #X msg 68 153 0;
 #X obj 83 108 t b p;
 #X obj 19 50 inlet;
@@ -1519,10 +1519,12 @@ f f f f f f f f f f, f 179;
 #X obj 295 314 pack f f;
 #X msg 295 290 0;
 #X obj 295 338 unpack f f;
-#X obj 295 267 t b;
 #X obj 345 286 t f;
 #X floatatom 369 373 5 0 0 0 - - -;
 #X obj 39 349 s colorchangeItemIndex;
+#X obj 295 267 t b b;
+#X obj 342 205 t f;
+#X obj 176 131 delay 10;
 #X connect 0 0 7 0;
 #X connect 1 0 0 0;
 #X connect 1 1 6 0;
@@ -1536,22 +1538,26 @@ f f f f f f f f f f, f 179;
 #X connect 11 0 0 0;
 #X connect 11 0 17 0;
 #X connect 12 0 15 1;
-#X connect 12 1 0 0;
+#X connect 12 1 30 0;
 #X connect 13 1 14 0;
 #X connect 14 0 4 0;
-#X connect 14 0 28 0;
+#X connect 14 0 27 0;
 #X connect 15 0 13 0;
 #X connect 16 0 18 0;
-#X connect 17 0 25 0;
-#X connect 18 0 21 0;
+#X connect 17 0 28 0;
+#X connect 18 0 28 0;
+#X connect 18 0 29 0;
 #X connect 19 0 20 0;
 #X connect 20 0 21 1;
-#X connect 21 0 26 0;
+#X connect 21 0 25 0;
 #X connect 22 0 24 0;
 #X connect 23 0 22 0;
-#X connect 24 1 27 0;
-#X connect 25 0 23 0;
-#X connect 26 0 22 1;
+#X connect 24 1 26 0;
+#X connect 25 0 22 1;
+#X connect 28 0 23 0;
+#X connect 28 1 23 0;
+#X connect 29 0 21 0;
+#X connect 30 0 0 0;
 #X restore 1114 363 pd OBGetSongSettingsIndex;
 #X text 43 -247 swing;
 #N canvas 423 84 672 582 buildvelocityprojectPath 0;
@@ -1654,14 +1660,13 @@ f f f f f f f f f f, f 179;
 #X obj 154 91 t b p;
 #X msg 154 121 0;
 #X obj 154 67 text define -k \$0-velocities;
-#A set 1 1 1 1 1 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 1 0 1 1 1 0 1 0 1 0
-1 1 \; 1 1 1 1 1 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 1 0 1 1 1 0 1 0 1 0
-1 1 \; 1 1 1 1 1 0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 1 0 1 1 1 0 1 0 1 0
-1 1 \; 1 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0
-0 0 \; 1 0 1 1 1 0 1 1 1 0 0 1 1 0 1 0 1 0 1 1 1 0 1 1 1 0 0 1 1 0
-1 0 \; 1 0 1 0 1 0 1 1 1 0 0 0 1 0 0 0 1 0 1 0 1 0 1 1 1 0 0 0 1 0
-0 0 \; 1 0 1 0 1 0 0 1 1 0 1 1 1 0 0 0 1 0 1 1 1 0 0 1 1 0 0 0 1 1
-1 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A set 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 1 0 1 0 1 0 1 0
+0 0 \; 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0
+0 0 \; 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

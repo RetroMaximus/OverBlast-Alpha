@@ -4,6 +4,8 @@ OverBlast ReadMe Document
 
 Fixes 12/31/2019
 
+- Song playlist items are highlighted when played in the correct order. This was previoulsy set
+one item ahead of when it should have been playing.
 - When color changes to the active color the previous pattern will stay selected. (Fixed)
 - When color changes to the active color the previous sequence will stay selected. (Fixed)
 
@@ -18,7 +20,7 @@ Fixes 12/28/2019
 Known Bugs
 
 Recently fix but incase these errors show again. A lot of red messages when Overblast
-first starts indicating pattern or velocity file are missing you should do the following.
+first starts indicating pattern or velocity default files are missing you should do the following.
 Click Create_New button to create temp defaults then close and reopen Overblast.
 
 Song Playlist -
