@@ -1,21 +1,25 @@
 OverBlast ReadMe Document
 
+- Recent Fixes and additions
+
+Fixes 12/31/2019
+
+- When color changes to the active color the previous pattern will stay selected. (Fixed)
+- When color changes to the active color the previous sequence will stay selected. (Fixed)
+
+Fixes 12/30/2019
+
+- Default files are now generated correctly when Overblast is run for the first time.
+- Now the playlist will now increment when playing and continue past 16 song items.
+
+Fixes 12/28/2019
+- Sample Editor is avalible to chop and edit wave samples.
+
 Known Bugs
 
 Recently fix but incase these errors show again. A lot of red messages when Overblast
 first starts indicating pattern or velocity file are missing you should do the following.
 Click Create_New button to create temp defaults then close and reopen Overblast.
-
-
-Pattern Selector -
-
-- When color changes to the active color the previous pattern will stay selected. 
-Double clicking will sometimes fix this. These actions are currently laggy and will be fixed.
-
-Sequence Selector -
-
-- When color changes to the active color the previous sequence will stay selected. 
-- Double clicking will sometimes fix this. These actions are currently laggy and will be fixed.
 
 Song Playlist -
 
@@ -45,16 +49,3 @@ Sequencer -
 Metronome -
 
 - Red error messages in pd due to [r checkpadnum] = 0 inside the metronome patch. Red messages>>>> text set: line number (-1) < 0
-
-
-
-- Recent Fixes and additions
-
-Fixes 12/30/2019
-
-- Default files are now generated correctly when Overblast is run for the first time.
-- Now the playlist will now increment when playing and continue past 16 song items.
-
-Fixes 12/28/2019
-- Sample Editor is avalible to chop and edit wave samples.
-
