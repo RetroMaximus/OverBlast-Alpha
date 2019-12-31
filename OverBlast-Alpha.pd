@@ -1,4 +1,4 @@
-#N canvas 157 70 1048 749 10;
+#N canvas 83 67 1048 749 10;
 #X floatatom 180 -92 5 0 0 0 per_bank - -;
 #X obj 252 -108 hradio 15 1 0 1 empty empty Bank -25 7 0 10 -262144
 -1 -1 0;
@@ -87,35 +87,37 @@
 #X coords 0 -1 1 1 49 19 2 0 0;
 #X restore 2 5 pd LoadProject_Btn;
 #N canvas -8 -8 1276 686 SeqSelector 0;
-#X obj 56 18 hradio 15 1 0 64 empty empty empty 0 -8 0 10 -191407 -1
+#X obj 56 18 hradio 15 1 0 64 seqselradio-send seqselradio-recv empty
+0 -8 0 10 -166441 -1 -1 0;
+#X obj 56 1 cnv 15 60 15 seqtab-recv seqtab-recv 1-4 22 9 0 10 -166441
 -1 0;
-#X obj 56 1 cnv 15 60 15 empty empty 1-4 22 9 0 10 -191407 -1 0;
 #X obj 116 1 cnv 15 60 15 empty empty 5-8 22 9 0 10 -128992 -1 0;
-#X obj 176 1 cnv 15 60 15 empty empty 9-12 20 9 0 10 -191407 -1 0;
+#X obj 176 1 cnv 15 60 15 seqtab-send seqtab-recv 9-12 20 9 0 10 -166441
+-1 0;
 #X obj 236 1 cnv 15 60 15 empty empty 13-16 17 9 0 10 -128992 -1 0
 ;
-#X obj 296 1 cnv 15 60 15 empty empty 17-20 17 9 0 10 -191407 -1 0
-;
+#X obj 296 1 cnv 15 60 15 seqtab-send seqtab-recv 17-20 17 9 0 10 -166441
+-1 0;
 #X obj 356 1 cnv 15 60 15 empty empty 21-24 17 9 0 10 -128992 -1 0
 ;
-#X obj 416 1 cnv 15 60 15 empty empty 25-28 17 9 0 10 -191407 -1 0
-;
+#X obj 416 1 cnv 15 60 15 seqtab-send seqtab-recv 25-28 17 9 0 10 -166441
+-1 0;
 #X obj 476 1 cnv 15 60 15 empty empty 29-32 17 9 0 10 -128992 -1 0
 ;
-#X obj 536 1 cnv 15 60 15 empty empty 33-36 17 9 0 10 -191407 -1 0
-;
+#X obj 536 1 cnv 15 60 15 seqtab-send seqtab-recv 33-36 17 9 0 10 -166441
+-1 0;
 #X obj 596 1 cnv 15 60 15 empty empty 37-40 17 9 0 10 -128992 -1 0
 ;
-#X obj 656 1 cnv 15 60 15 empty empty 41-44 17 9 0 10 -191407 -1 0
-;
+#X obj 656 1 cnv 15 60 15 seqtab-send seqtab-recv 41-44 17 9 0 10 -166441
+-1 0;
 #X obj 716 1 cnv 15 60 15 empty empty 45-48 17 9 0 10 -128992 -1 0
 ;
-#X obj 776 1 cnv 15 60 15 empty empty 49-52 17 9 0 10 -191407 -1 0
-;
+#X obj 776 1 cnv 15 60 15 seqtab-send seqtab-recv 49-52 17 9 0 10 -166441
+-1 0;
 #X obj 836 1 cnv 15 60 15 empty empty 53-56 17 9 0 10 -128992 -1 0
 ;
-#X obj 896 1 cnv 15 60 15 empty empty 57-60 17 9 0 10 -191407 -1 0
-;
+#X obj 896 1 cnv 15 60 15 seqtab-send seqtab-recv 57-60 17 9 0 10 -166441
+-1 0;
 #X obj 956 1 cnv 15 60 15 empty empty 61-64 17 9 0 10 -128992 -1 0
 ;
 #X obj 1 1 cnv 15 40 15 empty empty Sequence 5 7 0 10 -233017 -66577
@@ -310,8 +312,8 @@
 #X obj 344 155 - 100;
 #X obj 272 215 outlet~;
 #X obj 371 216 outlet~;
-#X obj 1 1 cnv 15 51 238 \$1-mutemaster-send \$1-mutemaster-recv empty
-5 5 0 10 -128992 -262144 0;
+#X obj 1 1 cnv 15 51 238 master-send master-recv empty 5 5 0 10 -166441
+-262144 0;
 #X obj 42 34 vsl 8 200 0 1 0 0 \$0-vol17-send \$0-vol17-recv Master
 -38 200 0 10 -162280 -1 -262144 15920 1;
 #X obj 5 53 vu 8 160 empty empty -1 -8 0 10 -66577 -1 1 0;
@@ -410,36 +412,38 @@
 #X coords 0 -1 1 1 53 240 2 0 0;
 #X restore 966 250 pd MixerMaster;
 #X obj 180 -144 t b;
-#N canvas 34 36 1276 686 PatSelector 1;
-#X obj 56 18 hradio 15 1 0 64 empty empty empty 0 -8 0 10 -191407 -1
--1 29;
-#X obj 56 1 cnv 15 60 15 empty empty 1-4 22 9 0 10 -191407 -1 0;
+#N canvas 34 36 1276 686 PatSelector 0;
+#X obj 56 18 hradio 15 1 0 64 pattselradio-send pattselradio-recv empty
+0 -8 0 10 -166441 -1 -1 0;
+#X obj 56 1 cnv 15 60 15 patttab-send patttab-recv 1-4 22 9 0 10 -166441
+-1 0;
 #X obj 116 1 cnv 15 60 15 empty empty 5-8 22 9 0 10 -128992 -1 0;
-#X obj 176 1 cnv 15 60 15 empty empty 9-12 20 9 0 10 -191407 -1 0;
+#X obj 176 1 cnv 15 60 15 patttab-send patttab-recv 9-12 20 9 0 10
+-166441 -1 0;
 #X obj 236 1 cnv 15 60 15 empty empty 13-16 17 9 0 10 -128992 -1 0
 ;
-#X obj 296 1 cnv 15 60 15 empty empty 17-20 17 9 0 10 -191407 -1 0
-;
+#X obj 296 1 cnv 15 60 15 patttab-send patttab-recv 17-20 17 9 0 10
+-166441 -1 0;
 #X obj 356 1 cnv 15 60 15 empty empty 21-24 17 9 0 10 -128992 -1 0
 ;
-#X obj 416 1 cnv 15 60 15 empty empty 25-28 17 9 0 10 -191407 -1 0
-;
+#X obj 416 1 cnv 15 60 15 patttab-send patttab-recv 25-28 17 9 0 10
+-166441 -1 0;
 #X obj 476 1 cnv 15 60 15 empty empty 29-32 17 9 0 10 -128992 -1 0
 ;
-#X obj 536 1 cnv 15 60 15 empty empty 33-36 17 9 0 10 -191407 -1 0
-;
+#X obj 536 1 cnv 15 60 15 patttab-send patttab-recv 33-36 17 9 0 10
+-166441 -1 0;
 #X obj 596 1 cnv 15 60 15 empty empty 37-40 17 9 0 10 -128992 -1 0
 ;
-#X obj 656 1 cnv 15 60 15 empty empty 41-44 17 9 0 10 -191407 -1 0
-;
+#X obj 656 1 cnv 15 60 15 patttab-send patttab-recv 41-44 17 9 0 10
+-166441 -1 0;
 #X obj 716 1 cnv 15 60 15 empty empty 45-48 17 9 0 10 -128992 -1 0
 ;
-#X obj 776 1 cnv 15 60 15 empty empty 49-52 17 9 0 10 -191407 -1 0
-;
+#X obj 776 1 cnv 15 60 15 patttab-send patttab-recv 49-52 17 9 0 10
+-166441 -1 0;
 #X obj 836 1 cnv 15 60 15 empty empty 53-56 17 9 0 10 -128992 -1 0
 ;
-#X obj 896 1 cnv 15 60 15 empty empty 57-60 17 9 0 10 -191407 -1 0
-;
+#X obj 896 1 cnv 15 60 15 patttab-send patttab-recv 57-60 17 9 0 10
+-166441 -1 0;
 #X obj 956 1 cnv 15 60 15 empty empty 61-64 17 9 0 10 -128992 -1 0
 ;
 #X obj 1 1 cnv 15 40 15 empty empty Pattern 5 7 0 10 -233017 -66577
@@ -533,8 +537,6 @@
 #X floatatom 430 443 5 0 0 0 - - -;
 #X obj 276 -149 t b;
 #X obj 137 -46 t b;
-#X msg 138 -24 0;
-#X obj 139 -66 delay 10;
 #X obj 131 -114 t b b;
 #X obj 33 80 t f f f b;
 #X obj 100 187 delay 5;
@@ -560,7 +562,6 @@
 #X obj 360 22 OBSelPattBtn 21;
 #X obj 375 22 OBSelPattBtn 22;
 #X obj 390 22 OBSelPattBtn 23;
-#X obj 75 22 OBSelPattBtn 2;
 #X obj 405 22 OBSelPattBtn 24;
 #X obj 420 22 OBSelPattBtn 25;
 #X obj 435 22 OBSelPattBtn 26;
@@ -604,12 +605,16 @@
 #X obj 1005 22 OBSelPattBtn 64;
 #X obj 150 22 OBSelPattBtn 7;
 #X obj 165 22 OBSelPattBtn 8;
-#X connect 0 0 71 0;
+#X msg 139 -24 0;
+#X obj 139 -66 delay 50;
+#X obj 227 -61 r firstpattern;
+#X obj 226 -33 t b;
+#X connect 0 0 69 0;
 #X connect 19 0 20 0;
 #X connect 20 0 24 0;
 #X connect 20 0 26 0;
 #X connect 20 0 36 0;
-#X connect 23 0 70 0;
+#X connect 23 0 68 0;
 #X connect 23 1 22 0;
 #X connect 24 0 37 0;
 #X connect 25 0 31 0;
@@ -656,15 +661,16 @@
 #X connect 62 0 42 0;
 #X connect 63 0 60 0;
 #X connect 64 0 52 1;
-#X connect 66 0 69 0;
-#X connect 67 0 68 0;
-#X connect 68 0 0 0;
-#X connect 69 0 67 0;
-#X connect 70 0 69 0;
-#X connect 71 0 21 0;
-#X connect 71 1 40 0;
-#X connect 72 0 30 0;
-#X connect 73 0 41 0;
+#X connect 66 0 137 0;
+#X connect 67 0 136 0;
+#X connect 69 0 21 0;
+#X connect 69 1 40 0;
+#X connect 70 0 30 0;
+#X connect 71 0 41 0;
+#X connect 136 0 0 0;
+#X connect 137 0 67 0;
+#X connect 138 0 139 0;
+#X connect 139 0 136 0;
 #X coords 0 -1 1 1 1017 35 2 0 0;
 #X restore 2 28 pd PatSelector;
 #X obj 21 -45 OBMetronome;
@@ -1941,6 +1947,7 @@
 #X obj 308 12 inlet;
 #X obj 498 98 text define -k \$0-readtemppatfile;
 #A set 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3453,17 +3460,13 @@ value" used to create the pack to which it is connected.;
 #X msg 250 -42 80;
 #X obj 258 -21 s OBbpm;
 #X obj 347 -171 clone -s 1 MultiSamplePlayer 64;
-#N canvas 50 147 1087 404 OBAlphaSongBuilder 0;
+#N canvas 3 222 1087 404 OBAlphaSongBuilder 0;
 #X obj 1 5 cnv 15 35 15 empty empty Song 5 7 0 10 -262144 -66577 0
 ;
 #X obj 1 22 cnv 15 40 15 empty empty Play 5 7 0 10 -262144 -66577 0
 ;
-#X msg 69 -43 20;
-#X msg 111 -43 101;
-#X msg 146 -42 10;
-#X msg 187 -42 62;
-#X obj 84 -89 loadbang;
-#X obj 85 -67 t b b b b;
+#X obj 37 -125 loadbang;
+#X obj 38 -103 t b b b b;
 #X obj 42 0 OBSongPatternItem 1;
 #X obj 1 41 cnv 15 40 15 empty empty List 5 7 0 10 -262144 -66577 0
 ;
@@ -3482,11 +3485,365 @@ value" used to create the pack to which it is connected.;
 #X obj 834 0 OBSongPatternItem 14;
 #X obj 895 0 OBSongPatternItem 15;
 #X obj 955 0 OBSongPatternItem 16;
-#X connect 6 0 7 0;
-#X connect 7 0 2 0;
-#X connect 7 1 3 0;
-#X connect 7 2 4 0;
-#X connect 7 3 5 0;
+#X text 72 -38 Default Color Grey;
+#X floatatom 91 109 5 0 0 0 - - -;
+#X msg 90 201 \; plcolor-recv color \$1 \;;
+#X obj 90 84 r plcolor-send;
+#X msg 40 -37 \$1;
+#X msg 39 -80 1;
+#X obj 40 -61 t f;
+#X obj 75 -61 s plcolor-send;
+#X floatatom 284 107 5 0 0 0 - - -;
+#X obj 287 155 t f;
+#X obj 283 82 r aplcolor-send;
+#X msg 281 189 \; aplcolor-recv color \$1 \;;
+#X obj 195 -62 t f;
+#X msg 194 -81 17;
+#X obj 230 -62 s aplcolor-send;
+#X text 275 -39 Default Color light blue;
+#X msg 247 -38 \$1;
+#X obj 91 129 int;
+#X obj 285 128 int;
+#X msg 212 619 \; pattselradio-recv color \$1 \;;
+#X msg 233 583 \; seqselradio-recv color \$1 \;;
+#X msg 131 724 \; patttab-recv color \$1 \;;
+#X msg 180 658 \; seqtab-recv color \$1 \;;
+#N canvas 0 50 450 300 adjustplaylistcolors 0;
+#X obj 43 28 inlet;
+#X obj 171 19 inlet;
+#X obj 133 139 f;
+#X obj 133 166 + 1;
+#X msg 203 113 0;
+#X msg 133 67 1;
+#X msg 168 70 0;
+#X floatatom 134 190 5 0 0 0 - - -;
+#X obj 135 214 count 1 16;
+#X floatatom 137 241 5 0 0 0 - - -;
+#X obj 206 234 t b;
+#X msg 84 224 0;
+#X obj 84 246 t f;
+#X obj 84 271 pack f f f;
+#X floatatom 145 359 5 0 0 0 - - -;
+#X obj 76 298 unpack f f f;
+#X msg 146 393 symbol \$1-songitem-recv;
+#X obj 103 460 symbol;
+#X symbolatom 150 425 10 0 0 0 - - -;
+#X msg 156 651 color \$1;
+#X obj 156 671 s;
+#X msg 96 432 bang;
+#X obj 105 533 t b;
+#X obj 104 510 delay 20;
+#X obj 103 486 t b;
+#X obj 105 560 pack f f;
+#X obj 111 584 unpack f f;
+#X floatatom 126 613 5 0 0 0 - - -;
+#X obj 85 409 delay 10;
+#X obj 165 617 t f;
+#X obj 150 539 t f;
+#X obj 145 323 t f b;
+#X obj 32 205 t b;
+#X obj 86 142 t f;
+#X obj 163 44 t f;
+#X obj 198 145 mod 16;
+#X obj 33 182 delay 5;
+#X obj 134 113 metro 20;
+#X connect 0 0 33 0;
+#X connect 1 0 34 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 3 0 35 0;
+#X connect 4 0 2 1;
+#X connect 5 0 37 0;
+#X connect 6 0 37 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 1 10 0;
+#X connect 9 0 13 2;
+#X connect 9 0 36 0;
+#X connect 10 0 6 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 15 0;
+#X connect 14 0 16 0;
+#X connect 15 1 30 0;
+#X connect 15 2 31 0;
+#X connect 16 0 18 0;
+#X connect 17 0 20 1;
+#X connect 17 0 24 0;
+#X connect 18 0 17 1;
+#X connect 19 0 20 0;
+#X connect 21 0 17 0;
+#X connect 22 0 25 0;
+#X connect 23 0 22 0;
+#X connect 24 0 23 0;
+#X connect 25 0 26 0;
+#X connect 26 1 27 0;
+#X connect 26 1 29 0;
+#X connect 28 0 21 0;
+#X connect 29 0 19 0;
+#X connect 30 0 25 1;
+#X connect 31 0 14 0;
+#X connect 31 1 28 0;
+#X connect 32 0 11 0;
+#X connect 33 0 13 1;
+#X connect 34 0 5 0;
+#X connect 35 0 2 1;
+#X connect 36 0 32 0;
+#X connect 37 0 2 0;
+#X restore 38 575 pd adjustplaylistcolors;
+#X obj 91 606 t f f;
+#N canvas 0 50 450 300 adjustpatterncolors 0;
+#X obj 43 28 inlet;
+#X obj 171 19 inlet;
+#X obj 133 139 f;
+#X obj 133 166 + 1;
+#X msg 203 113 0;
+#X msg 133 67 1;
+#X msg 168 70 0;
+#X floatatom 134 190 5 0 0 0 - - -;
+#X floatatom 137 241 5 0 0 0 - - -;
+#X obj 206 234 t b;
+#X msg 84 224 0;
+#X obj 84 246 t f;
+#X obj 84 271 pack f f f;
+#X floatatom 145 359 5 0 0 0 - - -;
+#X obj 76 298 unpack f f f;
+#X obj 103 460 symbol;
+#X symbolatom 150 425 10 0 0 0 - - -;
+#X msg 156 651 color \$1;
+#X obj 156 671 s;
+#X msg 96 432 bang;
+#X obj 105 533 t b;
+#X obj 104 510 delay 20;
+#X obj 103 486 t b;
+#X obj 105 560 pack f f;
+#X obj 111 584 unpack f f;
+#X floatatom 126 613 5 0 0 0 - - -;
+#X obj 85 409 delay 10;
+#X obj 165 617 t f;
+#X obj 150 539 t f;
+#X obj 145 323 t f b;
+#X obj 32 205 t b;
+#X obj 86 142 t f;
+#X obj 163 44 t f;
+#X msg 146 393 symbol \$1-patternbtn-recv;
+#X obj 135 214 count 1 64;
+#X obj 198 145 mod 64;
+#X obj 134 113 metro 80;
+#X obj 33 182 delay 5;
+#X connect 0 0 31 0;
+#X connect 1 0 32 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 3 0 35 0;
+#X connect 4 0 2 1;
+#X connect 5 0 36 0;
+#X connect 6 0 36 0;
+#X connect 7 0 34 0;
+#X connect 8 0 12 2;
+#X connect 8 0 37 0;
+#X connect 9 0 6 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 14 0;
+#X connect 13 0 33 0;
+#X connect 14 1 28 0;
+#X connect 14 2 29 0;
+#X connect 15 0 18 1;
+#X connect 15 0 22 0;
+#X connect 16 0 15 1;
+#X connect 17 0 18 0;
+#X connect 19 0 15 0;
+#X connect 20 0 23 0;
+#X connect 21 0 20 0;
+#X connect 22 0 21 0;
+#X connect 23 0 24 0;
+#X connect 24 1 25 0;
+#X connect 24 1 27 0;
+#X connect 26 0 19 0;
+#X connect 27 0 17 0;
+#X connect 28 0 23 1;
+#X connect 29 0 13 0;
+#X connect 29 1 26 0;
+#X connect 30 0 10 0;
+#X connect 31 0 12 1;
+#X connect 32 0 5 0;
+#X connect 33 0 16 0;
+#X connect 34 0 8 0;
+#X connect 34 1 9 0;
+#X connect 35 0 2 1;
+#X connect 36 0 2 0;
+#X connect 37 0 30 0;
+#X restore 64 628 pd adjustpatterncolors;
+#X obj 92 670 t f f;
+#N canvas 0 50 450 300 adjustsequencecolors 0;
+#X obj 43 28 inlet;
+#X obj 171 19 inlet;
+#X obj 133 139 f;
+#X obj 133 166 + 1;
+#X msg 203 113 0;
+#X msg 133 67 1;
+#X msg 168 70 0;
+#X floatatom 134 190 5 0 0 0 - - -;
+#X floatatom 137 241 5 0 0 0 - - -;
+#X obj 206 234 t b;
+#X msg 84 224 0;
+#X obj 84 246 t f;
+#X obj 84 271 pack f f f;
+#X floatatom 145 359 5 0 0 0 - - -;
+#X obj 76 298 unpack f f f;
+#X obj 103 460 symbol;
+#X symbolatom 150 425 10 0 0 0 - - -;
+#X msg 156 651 color \$1;
+#X obj 156 671 s;
+#X msg 96 432 bang;
+#X obj 105 533 t b;
+#X obj 104 510 delay 20;
+#X obj 103 486 t b;
+#X obj 105 560 pack f f;
+#X obj 111 584 unpack f f;
+#X floatatom 126 613 5 0 0 0 - - -;
+#X obj 85 409 delay 10;
+#X obj 165 617 t f;
+#X obj 150 539 t f;
+#X obj 145 323 t f b;
+#X obj 32 205 t b;
+#X obj 86 142 t f;
+#X obj 163 44 t f;
+#X obj 135 214 count 1 64;
+#X obj 198 145 mod 64;
+#X obj 134 113 metro 80;
+#X obj 33 182 delay 5;
+#X msg 146 393 symbol \$1-seqbtn-recv;
+#X obj 197 280 s firstpattern;
+#X connect 0 0 31 0;
+#X connect 1 0 32 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 3 0 34 0;
+#X connect 4 0 2 1;
+#X connect 5 0 35 0;
+#X connect 6 0 35 0;
+#X connect 7 0 33 0;
+#X connect 8 0 12 2;
+#X connect 8 0 36 0;
+#X connect 9 0 6 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 14 0;
+#X connect 13 0 37 0;
+#X connect 14 1 28 0;
+#X connect 14 2 29 0;
+#X connect 15 0 18 1;
+#X connect 15 0 22 0;
+#X connect 16 0 15 1;
+#X connect 17 0 18 0;
+#X connect 19 0 15 0;
+#X connect 20 0 23 0;
+#X connect 21 0 20 0;
+#X connect 22 0 21 0;
+#X connect 23 0 24 0;
+#X connect 24 1 25 0;
+#X connect 24 1 27 0;
+#X connect 26 0 19 0;
+#X connect 27 0 17 0;
+#X connect 28 0 23 1;
+#X connect 29 0 13 0;
+#X connect 29 1 26 0;
+#X connect 30 0 10 0;
+#X connect 31 0 12 1;
+#X connect 32 0 5 0;
+#X connect 33 0 8 0;
+#X connect 33 1 9 0;
+#X connect 33 1 38 0;
+#X connect 34 0 2 1;
+#X connect 35 0 2 0;
+#X connect 36 0 30 0;
+#X connect 37 0 16 0;
+#X restore 67 695 pd adjustsequencecolors;
+#X obj 112 440 pack f f;
+#X obj 114 462 unpack;
+#X msg 114 395 0;
+#X obj 117 420 t f;
+#X obj 92 159 t f b;
+#X obj 142 190 t b;
+#X obj 142 165 delay 1000;
+#X msg 321 707 \; samplerpanel-recv color \$1 \;;
+#X msg 392 660 \; lowerboarder-recv color \$1 \;;
+#X msg 438 624 \; master-recv color \$1 \;;
+#X obj 145 491 t f f f f f f f f f f f f;
+#X connect 2 0 3 0;
+#X connect 3 0 26 0;
+#X connect 3 1 34 0;
+#X connect 22 0 38 0;
+#X connect 24 0 22 0;
+#X connect 25 0 4 0;
+#X connect 25 0 8 0;
+#X connect 25 0 9 0;
+#X connect 25 0 12 0;
+#X connect 25 0 13 0;
+#X connect 25 0 16 0;
+#X connect 25 0 17 0;
+#X connect 25 0 20 0;
+#X connect 25 0 6 0;
+#X connect 25 0 19 0;
+#X connect 25 0 18 0;
+#X connect 25 0 15 0;
+#X connect 25 0 14 0;
+#X connect 25 0 11 0;
+#X connect 25 0 10 0;
+#X connect 25 0 7 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 29 0 39 0;
+#X connect 30 0 32 0;
+#X connect 30 0 37 0;
+#X connect 31 0 29 0;
+#X connect 33 0 35 0;
+#X connect 34 0 33 0;
+#X connect 37 0 4 1;
+#X connect 37 0 20 1;
+#X connect 37 0 19 1;
+#X connect 37 0 18 1;
+#X connect 37 0 17 1;
+#X connect 37 0 16 1;
+#X connect 37 0 15 1;
+#X connect 37 0 14 1;
+#X connect 37 0 13 1;
+#X connect 37 0 12 1;
+#X connect 37 0 11 1;
+#X connect 37 0 10 1;
+#X connect 37 0 9 1;
+#X connect 37 0 8 1;
+#X connect 37 0 7 1;
+#X connect 37 0 6 1;
+#X connect 38 0 53 0;
+#X connect 39 0 30 0;
+#X connect 45 0 46 0;
+#X connect 45 1 46 1;
+#X connect 47 0 48 0;
+#X connect 47 1 48 1;
+#X connect 49 0 50 0;
+#X connect 50 1 59 0;
+#X connect 51 0 52 0;
+#X connect 52 0 49 0;
+#X connect 53 0 23 0;
+#X connect 53 0 25 0;
+#X connect 53 0 49 1;
+#X connect 53 1 55 0;
+#X connect 54 0 51 0;
+#X connect 55 0 54 0;
+#X connect 59 0 44 0;
+#X connect 59 1 44 1;
+#X connect 59 3 45 0;
+#X connect 59 4 47 0;
+#X connect 59 5 42 0;
+#X connect 59 6 43 0;
+#X connect 59 7 40 0;
+#X connect 59 8 41 0;
+#X connect 59 9 56 0;
+#X connect 59 10 57 0;
+#X connect 59 11 58 0;
 #X coords 0 -1 1 1 1017 62 2 0 0;
 #X restore 2 160 pd OBAlphaSongBuilder;
 #N canvas 0 50 450 300 PlaySong_Btn 0;
@@ -3628,7 +3985,7 @@ value" used to create the pack to which it is connected.;
 0;
 #X obj 590 229 cnv 15 100 15 display_songlength-send display_songlength-recv
 Length:10240_secs 3 7 0 10 -262144 -1 0;
-#X obj 402 5 cnv 15 600 15 status-send status-recv Done_loading_sample.
+#X obj 398 5 cnv 15 370 15 status-send status-recv Done_loading_sample.
 3 7 0 10 -191407 -66577 0;
 #X msg 180 -120 64;
 #N canvas 0 50 450 300 nextpg_Btn 0;
@@ -3682,7 +4039,7 @@ Length:10240_secs 3 7 0 10 -262144 -1 0;
 #X connect 10 0 0 0;
 #X connect 11 0 4 0;
 #X coords 0 -1 1 1 48 19 2 0 0;
-#X restore 145 520 pd previouspg_Btn;
+#X restore 694 548 pd previouspg_Btn;
 #X obj 93 229 cnv 15 25 15 display_pg-send display_pg-recv No:1 3 7
 1 10 -262144 -1 0;
 #N canvas 0 50 450 300 SaveSongPlaylist_Btn 0;
@@ -3710,14 +4067,14 @@ Length:10240_secs 3 7 0 10 -262144 -1 0;
 #X connect 10 0 0 0;
 #X connect 11 0 4 0;
 #X coords 0 -1 1 1 117 19 2 0 0;
-#X restore 209 550 pd SaveSongPlaylist_Btn;
+#X restore 637 613 pd SaveSongPlaylist_Btn;
 #X obj 64 229 cnv 15 25 15 empty empty Page 3 7 0 10 -262144 -1 0;
 #X obj 436 580 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 437 603 s projectplaystate;
 #X msg 440 544 1;
 #X msg 476 542 0;
-#X obj 37 627 hradio 15 1 0 10 songpages-send songpages-recv Song_Pages
+#X obj 37 621 hradio 15 1 0 10 songpages-send songpages-recv Song_Pages
 0 -8 0 10 -262144 -1 -1 0;
 #N canvas -8 -8 1280 878 movepage 0;
 #X obj 27 35 inlet;
@@ -3745,11 +4102,14 @@ Length:10240_secs 3 7 0 10 -262144 -1 0;
 #X obj 73 17 r bangnextpage;
 #X obj 47 229 mod 10;
 #X text 26 246 Match total allowed pages minues;
+#X obj 122 294 s emode;
+#X msg 122 272 0;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 6 1;
 #X connect 2 0 8 1;
 #X connect 4 0 10 0;
+#X connect 4 0 26 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
 #X connect 6 0 9 0;
@@ -3771,6 +4131,7 @@ Length:10240_secs 3 7 0 10 -262144 -1 0;
 #X connect 22 0 4 0;
 #X connect 23 0 6 1;
 #X connect 23 0 8 0;
+#X connect 26 0 25 0;
 #X restore 36 508 pd movepage;
 #X floatatom 36 537 5 0 0 0 - - -;
 #X obj 54 558 t f;
@@ -3889,17 +4250,23 @@ below.;
 #X msg 521 509 1, f 5;
 #X obj 559 542 s pattnum;
 #X obj 4 253 OBWaveEditor;
-#X obj 370 632 s emode;
-#X msg 371 600 0;
-#X obj 308 625 s emode;
-#X msg 309 593 1;
+#X obj 416 658 s emode;
+#X msg 417 626 0;
+#X obj 475 663 s emode;
+#X msg 476 631 1;
 #X obj 522 569 s selsongitem;
 #X obj 522 544 t f;
-#X obj 46 659 s songbank;
+#X obj 52 646 s songbank;
 #X msg 15 -111 0;
-#X msg 74 588 set \$1;
+#X msg 74 582 set \$1;
 #X obj 96 -74 delay 20;
 #X obj 109 -22 r bangnewdefaultfiles;
+#X obj 944 7 hsl 70 10 0 42 0 0 plcolor-send plcolor-recv Default_Color
+3 5 0 8 -166441 -1 -1 300 1;
+#X obj 862 7 hsl 70 10 0 42 0 0 aplcolor-send aplcolor-recv Active_Color
+3 5 0 8 -44926 -1 -1 2800 1;
+#X obj 773 5 cnv 15 25 15 empty empty Color_Scheme 3 7 0 10 -262144
+-1 0;
 #X connect 0 0 3 0;
 #X connect 1 0 5 0;
 #X connect 2 0 1 0;

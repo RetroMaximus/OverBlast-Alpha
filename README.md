@@ -4,8 +4,11 @@ OverBlast ReadMe Document
 
 Fixes 12/31/2019
 
-- Song playlist items are highlighted when played in the correct order. This was previoulsy set
-one item ahead of when it should have been playing.
+- Added abilty to change color scheme. To change permament startup
+values open OBAlphaSongBuilder.pd to edit values as needed currently set to "1" = Grey for default
+and "17" = Light Blue for active song playlist items.
+- Removed a bunch of unneeded objects from MultiSamplePlayer.pd 
+- Song playlist items are highlighted when played in the correct order.
 - When color changes to the active color the previous pattern will stay selected. (Fixed)
 - When color changes to the active color the previous sequence will stay selected. (Fixed)
 
@@ -26,6 +29,7 @@ Click Create_New button to create temp defaults then close and reopen Overblast.
 Song Playlist -
 
 - All song playlist list items can not be managed only the first 16. Due to pages buttons.
+- Song playlist data will be overwritten if the page is changed.
 - Atoms in the song list items will change when not scrolled. Alwasy seams to be +2 items ahead.
 - EOS check box does not work. Not developed at all as of yet.
 - Pages (Prev) and [Next] buttons both work but does not change songlist items visually.

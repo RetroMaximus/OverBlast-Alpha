@@ -8,9 +8,9 @@
 #X obj 14 109 int;
 #X msg 14 156 label Swing:\$1;
 #X obj 402 98 text define -k \$0-sequences;
-#A set 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0
+#A set 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 0 0 0 1 0 0 0
 0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -215,13 +215,13 @@
 #X text 686 -68 project name;
 #X obj 792 266 text define -k \$0-newmastermixerfile;
 #A set 0 0 0.5 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0.5 0.32 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A4_Kick_SP.wav
-\; 0 0 0.5 0.32 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A4_Kick_SP.wav
-\; 0 0 0.5 0.34 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_A2_Snare_SP.wav
-\; 0 0 0.5 0.16 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Rides&Cymbals/1_C#2_Cymbal_SP.wav
-\; 0 0 0.5 0.48 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Hats&Shakers/1_D#5_Hat_SP.wav
-\; 0 0 0.5 0.48 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Percussion/1_B1_Perc_SP.wav
-\; 0 0 0.5 0.3 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Percussion/1_F#1_Perc_SP.wav
+\; 0 0 0.5 0.4 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A4_Kick_SP.wav
+\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
@@ -437,28 +437,28 @@
 #X f 26;
 #X text 1120 404 Send new master mixer track data;
 #X obj 1114 340 text define -k \$0-newmastersongsettings;
-#A set 1 1 0 \; 1 1 0 \; 2 1 0 \; 1 1 0 \; 3 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
-1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0
-\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;;
+#A set tmpProject 0 0 0 0 0 0 0 0 102.4 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
+1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
+\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \;;
 #N canvas 322 142 646 630 readsongsettingsdata 0;
 #X obj 32 15 inlet;
 #X obj 227 18 inlet;
@@ -742,7 +742,7 @@ to remove song settings.;
 #X obj 180 353 s metronomeData;
 #X obj 125 250 r OBbpm;
 #X obj 362 409 vsl 15 50 0 0.9 0 0 feel empty 16th-note-feel 0 -9 0
-10 -262144 -1 -1 410 1;
+10 -262144 -1 -1 436 1;
 #X obj 255 308 s ticklength16;
 #X obj 363 369 t b f;
 #N canvas 0 50 450 300 OBFeelGroove 0;
@@ -1491,7 +1491,7 @@ f f f f f f f f f f, f 179;
 #X connect 7 2 3 0;
 #X connect 7 2 8 0;
 #X restore 1114 421 pd OBSendSongSettings;
-#N canvas -7 234 482 573 OBGetSongSettingsIndex 1;
+#N canvas -7 234 482 573 OBGetSongSettingsIndex 0;
 #X msg 68 153 0;
 #X obj 83 108 t b p;
 #X obj 19 50 inlet;
@@ -1660,10 +1660,11 @@ f f f f f f f f f f, f 179;
 #X obj 154 91 t b p;
 #X msg 154 121 0;
 #X obj 154 67 text define -k \$0-velocities;
-#A set 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 1 0 1 0 1 0 1 0
-0 0 \; 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0
-0 0 \; 1 0 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0
+#A set 1 1 1 0 1 1 1 0 0 0 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 0 1 0 1 0
+0 1 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 1 1 1 0 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 0 0 1 1 0 0 0 1 0 0 0
+0 1 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3146,10 +3147,10 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X obj 50 494 == 1;
 #X obj 22 592 s bangnewdefaultfiles;
 #X obj 23 520 t b b;
-#X obj 48 544 delay 300;
 #X obj 47 564 t b;
 #X obj 62 39 t b;
 #X obj 165 548 unpack f s;
+#X obj 48 544 delay 200;
 #X connect 0 0 1 0;
 #X connect 0 0 8 0;
 #X connect 0 0 15 1;
@@ -3167,11 +3168,11 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 6 0 25 0;
 #X connect 7 0 0 0;
 #X connect 9 0 7 0;
-#X connect 11 0 34 0;
+#X connect 11 0 33 0;
 #X connect 11 0 12 0;
 #X connect 12 0 0 1;
 #X connect 13 0 29 0;
-#X connect 15 0 35 0;
+#X connect 15 0 34 0;
 #X connect 16 0 17 0;
 #X connect 17 0 15 0;
 #X connect 18 0 16 0;
@@ -3187,13 +3188,13 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 28 0 18 0;
 #X connect 29 0 31 0;
 #X connect 31 0 30 0;
-#X connect 31 1 32 0;
-#X connect 32 0 33 0;
-#X connect 33 0 16 0;
-#X connect 34 0 9 0;
-#X connect 35 1 10 0;
+#X connect 31 1 35 0;
+#X connect 32 0 16 0;
+#X connect 33 0 9 0;
+#X connect 34 1 10 0;
+#X connect 35 0 32 0;
 #X restore 396 -203 pd initiateDefaultsCreation2;
-#N canvas 509 218 739 551 initiateDefaultsCreation 0;
+#N canvas 509 218 739 551 initiateDefaultsCreation 1;
 #X obj 103 162 symbol;
 #X msg 102 189 clear \, read \$1 \, rewind;
 #X obj 102 212 t b b a;
@@ -3227,10 +3228,10 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X obj 50 494 == 1;
 #X obj 22 592 s bangnewdefaultfiles;
 #X obj 23 520 t b b;
-#X obj 48 544 delay 300;
 #X obj 47 564 t b;
 #X obj 62 39 t b;
 #X obj 165 548 unpack f s;
+#X obj 48 544 delay 200;
 #X connect 0 0 1 0;
 #X connect 0 0 8 0;
 #X connect 0 0 15 1;
@@ -3248,11 +3249,11 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 6 0 25 0;
 #X connect 7 0 0 0;
 #X connect 9 0 7 0;
-#X connect 11 0 34 0;
+#X connect 11 0 33 0;
 #X connect 11 0 12 0;
 #X connect 12 0 0 1;
 #X connect 13 0 29 0;
-#X connect 15 0 35 0;
+#X connect 15 0 34 0;
 #X connect 16 0 17 0;
 #X connect 17 0 15 0;
 #X connect 18 0 16 0;
@@ -3268,11 +3269,11 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 28 0 18 0;
 #X connect 29 0 31 0;
 #X connect 31 0 30 0;
-#X connect 31 1 32 0;
-#X connect 32 0 33 0;
-#X connect 33 0 16 0;
-#X connect 34 0 9 0;
-#X connect 35 1 10 0;
+#X connect 31 1 35 0;
+#X connect 32 0 16 0;
+#X connect 33 0 9 0;
+#X connect 34 1 10 0;
+#X connect 35 0 32 0;
 #X restore 165 -213 pd initiateDefaultsCreation;
 #X connect 0 0 39 0;
 #X connect 1 0 40 0;

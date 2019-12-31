@@ -4,9 +4,9 @@
 #X obj 1 1 Cntrls \$1;
 #X obj 89 33 vradio 10 1 0 2 \$1-triggers-send \$1-triggers-recv empty
 -50 8 0 10 -262144 -1 -262144 0;
-#X obj 101 30 cnv 15 50 15 empty empty One_Shot 4 8 0 10 -128992 -66577
+#X obj 101 30 cnv 15 50 15 empty empty One_Shot 4 8 0 10 -262144 -66577
 0;
-#X obj 101 42 cnv 15 50 15 empty empty Loop 4 8 0 10 -128992 -66577
+#X obj 101 42 cnv 15 50 15 empty empty Loop 4 8 0 10 -262144 -66577
 0;
 #X floatatom 125 103 5 0 0 0 - - -;
 #X obj 127 122 t f;
@@ -48,7 +48,7 @@ empty -2 -8 0 10 -162280 -1 -1 0 1;
 #X obj 0 1 cnv 15 73 50 empty empty empty 20 12 0 14 -128992 -66577
 0;
 #X obj 6 4 hsl 60 13 0.1 1 0 0 \$1-softvalue-send \$1-softvalue-recv
-Soft:0.2 2 7 0 10 -90881 -1 -1 1211 1;
+Soft:0.3 2 7 0 10 -90881 -1 -1 1311 1;
 #X obj 6 19 hsl 60 13 0.2 1 0 0 \$1-medvalue-send \$1-medvalue-recv
 Med:0.5 2 7 0 10 -123526 -1 -1 2212 1;
 #X obj 6 35 hsl 60 13 0.3 1 0 0 \$1-hardvalue-send \$1-hardvalue-recv
