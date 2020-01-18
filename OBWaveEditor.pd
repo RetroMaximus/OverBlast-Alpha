@@ -1,8 +1,8 @@
-#N canvas -8 -8 1280 878 10;
-#X obj 1 1 cnv 15 560 238 empty empty Sample_Editor 10 8 0 10 -162280
--1 0;
-#X obj 9 16 cnv 15 543 215 empty empty empty 20 12 0 14 -191407 -66577
-0;
+#N canvas -8 -8 1280 766 10;
+#X obj 1 1 cnv 15 560 238 samplerbg-send samplerbg-recv Sample_Editor
+10 8 0 10 -166441 -1 0;
+#X obj 9 16 cnv 15 543 215 samplerpanel-send samplerpanel-recv empty
+20 12 0 14 -66577 -66577 0;
 #X obj -6 -69 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 480 142 vsl 9 80 0 1 0 0 empty empty empty 0 -9 0 10 -128992
@@ -31,7 +31,7 @@
 -1;
 #X text -4 387 Metronome;
 #X obj 12 68 vsl 10 100 0.1 1 0 0 empty empty empty 0 -9 0 10 -128992
--1 -1 1900 1;
+-1 -1 0 1;
 #X floatatom 439 481 5 0 0 0 - - -;
 #X obj 18 448 outlet;
 #N canvas 0 0 450 300 (subpatch) 0;
@@ -471,8 +471,8 @@ editor via the playbackQueue outlet.;
 ;
 #X obj 215 213 tgl 12 0 empty empty Time_Strech 17 7 0 8 -162280 -1
 -1 0 1;
-#X obj 147 87 cnv 15 4 10 empty empty Start_Position 1 6 0 9 -191407
--1 0;
+#X obj 147 87 cnv 15 4 10 empty startlbl-recv Start_Position 1 6 0
+9 -191407 -1 0;
 #N canvas 1113 541 551 362 FindStartEndPosition 0;
 #X obj 124 49 inlet startpos;
 #X obj 224 48 inlet endpos;
@@ -1427,7 +1427,7 @@ TempSampleRight;
 #X connect 19 0 17 2;
 #X connect 20 0 19 0;
 #X restore 642 247 pd OBFeelTicks;
-#X obj 153 117 cnv 15 4 10 empty empty End_Position 1 6 0 9 -191407
+#X obj 153 117 cnv 15 4 10 empty endlbl-recv End_Position 1 6 0 9 -191407
 -1 0;
 #X connect 2 0 86 0;
 #X connect 2 0 85 0;

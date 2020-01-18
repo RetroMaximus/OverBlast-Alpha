@@ -1,4 +1,4 @@
-#N canvas 198 100 1091 678 10;
+#N canvas 149 33 1091 630 10;
 #X obj 13 -193 text size \$0-sequences;
 #X obj 13 -73 text get \$0-sequences;
 #X obj 14 179 s swing-recv;
@@ -8,7 +8,8 @@
 #X obj 14 109 int;
 #X msg 14 156 label Swing:\$1;
 #X obj 402 98 text define -k \$0-sequences;
-#A set 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 0 0 0 1 0 0 0
+#A set 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 1 0 0
+1 0 \; 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -215,9 +216,9 @@
 #X text 686 -68 project name;
 #X obj 792 266 text define -k \$0-newmastermixerfile;
 #A set 0 0 0.5 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0.5 0.4 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A4_Kick_SP.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0.5 0.48 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_C3_Kick_SP.wav
+\; 0 0 0.5 0.48 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_A#5_Snare_SP.wav
+\; 0 0 0.5 0.2 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_A3_Snare_SP.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
@@ -437,28 +438,9 @@
 #X f 26;
 #X text 1120 404 Send new master mixer track data;
 #X obj 1114 340 text define -k \$0-newmastersongsettings;
-#A set tmpProject 0 0 0 0 0 0 0 0 102.4 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1
-1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1
-\; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \; 1 1 1 \;;
+#A set tmpProject 0 0 0 0 0 0 0 0 102.4 \; 1 1 0 \; 1 1 0 \; 1 1 0
+\; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1
+1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \; 1 1 0 \;;
 #N canvas 322 142 646 630 readsongsettingsdata 0;
 #X obj 32 15 inlet;
 #X obj 227 18 inlet;
@@ -955,7 +937,6 @@ to remove song settings.;
 #X obj 141 188 t f f;
 #X floatatom 200 174 5 0 0 0 - - -;
 #X obj 189 91 r loaded-obsb;
-#X obj 216 125 + 1;
 #X obj 37 268 s projectpatternnum;
 #X obj 242 264 s loadedpatternnum;
 #X obj 240 242 t f;
@@ -963,14 +944,14 @@ to remove song settings.;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 2 1;
-#X connect 4 0 11 0;
+#X connect 4 0 10 0;
 #X connect 5 0 7 0;
 #X connect 5 0 8 0;
-#X connect 6 0 13 0;
-#X connect 7 0 11 0;
+#X connect 6 0 12 0;
+#X connect 7 0 10 0;
 #X connect 7 1 6 0;
 #X connect 9 0 5 0;
-#X connect 13 0 12 0;
+#X connect 12 0 11 0;
 #X restore 278 341 pd OBCheckProjectPlayStatus;
 #N canvas 0 50 450 300 OBdefaultpatbank 0;
 #X obj 40 -177 inlet;
@@ -983,7 +964,7 @@ to remove song settings.;
 #X connect 2 0 4 0;
 #X connect 3 0 1 0;
 #X restore 596 -257 pd OBdefaultpatbank;
-#N canvas 437 224 572 495 OBCheckEditState 0;
+#N canvas 437 224 572 495 OBCheckEditState 1;
 #X floatatom 213 36 5 0 0 0 - - -;
 #X obj 310 8 r emodestate;
 #X obj 264 147 spigot 0;
@@ -991,78 +972,9 @@ to remove song settings.;
 1;
 #X text 7 73 Minus 1 to find the real index;
 #X text 41 30 Selected sequence number;
-#X floatatom 262 192 5 0 0 0 - - -;
+#X floatatom 265 194 5 0 0 0 - - -;
 #X obj 212 17 r padnum;
 #X obj 264 116 t f;
-#N canvas -2 393 450 369 ccheckifzero 0;
-#X obj 88 69 inlet;
-#X obj 88 435 outlet;
-#X floatatom 88 93 5 0 0 0 - - -;
-#X obj 88 158 change;
-#X obj 88 211 t b;
-#X obj 133 214 t b;
-#X obj 133 287 pack f f;
-#X obj 177 253 t f;
-#X obj 135 318 unpack f f;
-#X floatatom 192 338 5 0 0 0 - - -;
-#X msg 133 234 0;
-#X obj 133 254 t f;
-#X obj 220 425 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 95 267 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 188 384 t f b;
-#X obj 89 125 == 1;
-#X obj 88 186 == 0;
-#X obj 134 191 == 1;
-#X msg 88 232 1;
-#X obj 302 362 - 1;
-#X obj 240 216 t b;
-#X obj 240 289 pack f f;
-#X obj 284 255 t f;
-#X obj 242 320 unpack f f;
-#X floatatom 299 340 5 0 0 0 - - -;
-#X msg 240 236 0;
-#X obj 240 256 t f;
-#X obj 295 386 t f b;
-#X obj 238 150 > 2;
-#X obj 237 171 change;
-#X obj 237 193 == 1;
-#X connect 0 0 2 0;
-#X connect 2 0 7 0;
-#X connect 2 0 15 0;
-#X connect 2 0 22 0;
-#X connect 2 0 28 0;
-#X connect 3 0 16 0;
-#X connect 3 0 17 0;
-#X connect 4 0 18 0;
-#X connect 5 0 10 0;
-#X connect 6 0 8 0;
-#X connect 7 0 6 1;
-#X connect 8 1 9 0;
-#X connect 9 0 14 0;
-#X connect 10 0 11 0;
-#X connect 11 0 6 0;
-#X connect 14 0 1 0;
-#X connect 14 1 12 0;
-#X connect 15 0 3 0;
-#X connect 16 0 4 0;
-#X connect 17 0 5 0;
-#X connect 18 0 1 0;
-#X connect 18 0 13 0;
-#X connect 19 0 27 0;
-#X connect 20 0 25 0;
-#X connect 21 0 23 0;
-#X connect 22 0 21 1;
-#X connect 23 1 24 0;
-#X connect 24 0 19 0;
-#X connect 25 0 26 0;
-#X connect 26 0 21 0;
-#X connect 27 0 1 0;
-#X connect 28 0 29 0;
-#X connect 29 0 30 0;
-#X connect 30 0 20 0;
-#X restore 370 75 pd ccheckifzero;
 #X obj 264 266 s checkedpadnum;
 #X obj 109 242 s earlypadnumcheck;
 #X obj 373 246 s emodecheckedvalue;
@@ -1073,18 +985,18 @@ to remove song settings.;
 #X obj 290 219 - 1;
 #X connect 0 0 8 0;
 #X connect 1 0 3 0;
-#X connect 2 0 14 0;
+#X connect 2 0 13 0;
 #X connect 3 0 2 1;
-#X connect 3 0 12 0;
-#X connect 6 0 17 0;
+#X connect 3 0 11 0;
+#X connect 6 0 16 0;
 #X connect 7 0 0 0;
 #X connect 8 0 2 0;
-#X connect 8 0 15 0;
-#X connect 13 0 10 0;
-#X connect 14 0 6 0;
-#X connect 15 0 16 0;
-#X connect 16 0 11 0;
-#X connect 17 0 13 0;
+#X connect 8 0 14 0;
+#X connect 12 0 9 0;
+#X connect 13 0 6 0;
+#X connect 14 0 15 0;
+#X connect 15 0 10 0;
+#X connect 16 0 12 0;
 #X restore 57 298 pd OBCheckEditState;
 #X f 32;
 #N canvas -8 -8 1280 686 OBSendSteps 0;
@@ -1420,15 +1332,14 @@ f f f f f f f f f f, f 179;
 #X obj 70 131 sel 1;
 #X obj 265 446 outlet;
 #X obj 43 453 outlet;
-#X obj 167 198 pack f f;
-#X obj 206 173 t f;
-#X msg 162 169 0;
+#X obj 229 214 pack f f;
+#X msg 224 185 0;
 #X obj 106 206 t b;
-#X obj 181 233 unpack;
-#X obj 207 284 t f;
-#X floatatom 207 256 5 0 0 0 - - -;
-#X obj 208 310 s pattnum;
-#X obj 205 109 r $project_pattern;
+#X obj 243 249 unpack;
+#X obj 269 300 t f;
+#X floatatom 269 272 5 0 0 0 - - -;
+#X obj 270 326 s pattnum;
+#X obj 267 125 r $project_pattern;
 #X obj 109 261 r selsongitem;
 #X floatatom 125 397 5 0 0 0 - - -;
 #X floatatom 110 285 5 0 0 0 - - -;
@@ -1439,92 +1350,107 @@ f f f f f f f f f f, f 179;
 #X floatatom 125 353 5 0 0 0 - - -;
 #X obj 125 374 + 1;
 #X obj 130 416 t f;
-#X floatatom 249 186 5 0 0 0 - - -;
+#X floatatom 311 202 5 0 0 0 - - -;
 #X floatatom 179 423 5 0 0 0 - - -;
+#X obj 268 189 t f b;
+#X obj 321 234 delay 10;
 #X connect 0 0 7 0;
-#X connect 0 0 12 0;
-#X connect 0 0 24 0;
+#X connect 0 0 11 0;
+#X connect 0 0 23 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 1;
-#X connect 2 0 11 0;
 #X connect 3 0 0 0;
 #X connect 4 0 5 0;
 #X connect 4 0 8 0;
 #X connect 5 0 6 0;
 #X connect 6 0 3 0;
-#X connect 9 0 13 0;
-#X connect 10 0 9 1;
-#X connect 10 0 28 0;
-#X connect 11 0 9 0;
-#X connect 12 0 11 0;
-#X connect 13 1 15 0;
-#X connect 14 0 16 0;
-#X connect 15 0 14 0;
-#X connect 17 0 10 0;
-#X connect 18 0 20 0;
-#X connect 19 0 27 0;
-#X connect 20 0 22 1;
-#X connect 22 0 23 0;
-#X connect 23 1 25 0;
-#X connect 24 0 22 0;
-#X connect 25 0 26 0;
-#X connect 26 0 19 0;
-#X connect 27 0 21 0;
-#X connect 27 0 29 0;
+#X connect 9 0 12 0;
+#X connect 10 0 9 0;
+#X connect 12 1 14 0;
+#X connect 13 0 15 0;
+#X connect 14 0 13 0;
+#X connect 16 0 29 0;
+#X connect 17 0 19 0;
+#X connect 18 0 26 0;
+#X connect 19 0 21 1;
+#X connect 21 0 22 0;
+#X connect 22 1 24 0;
+#X connect 23 0 21 0;
+#X connect 24 0 25 0;
+#X connect 25 0 18 0;
+#X connect 26 0 20 0;
+#X connect 26 0 28 0;
+#X connect 29 0 9 1;
+#X connect 29 0 27 0;
+#X connect 29 1 30 0;
+#X connect 30 0 10 0;
 #X restore 1039 -171 pd OBGetProjectPlayState2;
 #N canvas 259 130 827 730 OBSendSongSettings 0;
 #X obj 121 104 list trim;
-#X obj 121 203 s $project_pattern;
-#X obj 202 234 s $project_loops;
-#X obj 286 260 s $project_endresult;
+#X obj 121 200 s $project_pattern;
+#X obj 203 221 s $project_loops;
+#X obj 286 196 s $project_endresult;
 #X obj 93 26 inlet;
-#X floatatom 108 225 5 0 0 0 - - -;
-#X floatatom 190 256 5 0 0 0 - - -;
+#X floatatom 121 151 5 0 0 0 - - -;
+#X floatatom 203 151 5 0 0 0 - - -;
 #X obj 121 128 unpack f f f, f 28;
-#X floatatom 273 280 5 0 0 0 - - -;
+#X floatatom 286 150 5 0 0 0 - - -;
+#X obj 121 177 t f;
+#X obj 203 175 t f;
+#X obj 286 173 t f;
 #X connect 0 0 7 0;
 #X connect 4 0 0 0;
-#X connect 7 0 1 0;
+#X connect 5 0 9 0;
+#X connect 6 0 10 0;
 #X connect 7 0 5 0;
-#X connect 7 1 2 0;
 #X connect 7 1 6 0;
-#X connect 7 2 3 0;
 #X connect 7 2 8 0;
+#X connect 8 0 11 0;
+#X connect 9 0 1 0;
+#X connect 10 0 2 0;
+#X connect 11 0 3 0;
 #X restore 1114 421 pd OBSendSongSettings;
-#N canvas -7 234 482 573 OBGetSongSettingsIndex 0;
-#X msg 68 153 0;
+#N canvas 132 131 647 573 OBGetSongSettingsIndex 0;
+#X msg 82 151 0;
 #X obj 83 108 t b p;
 #X obj 19 50 inlet;
 #X obj 78 49 inlet;
-#X obj 128 300 outlet;
-#X obj 221 48 inlet;
-#X obj 188 343 outlet;
-#X obj 75 175 t f;
-#X obj 119 40 r selsongitem;
-#X floatatom 127 69 5 0 0 0 - - -;
-#X obj 206 94 t b;
-#X obj 70 74 t b;
+#X obj 139 282 outlet;
+#X obj 222 47 inlet;
+#X obj 189 304 outlet;
+#X obj 82 175 t f;
+#X obj 127 49 r selsongitem;
+#X floatatom 127 71 5 0 0 0 - - -;
+#X obj 201 79 t b;
+#X obj 68 74 t b;
 #X obj 127 96 t f b;
-#X obj 68 250 unpack f f;
-#X obj 126 272 t f;
-#X obj 87 209 pack f f;
-#X obj 300 84 r pattnum;
-#X obj 29 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X floatatom 300 136 5 0 0 0 - - -;
-#X obj 401 189 r projectplaystate;
-#X obj 399 214 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 82 225 unpack f f;
+#X obj 139 248 t f;
+#X obj 82 199 pack f f;
+#X obj 43 304 s colorchangeItemIndex;
+#X obj 154 121 delay 10;
+#X obj 285 51 r pattnum;
+#X floatatom 284 71 5 0 0 0 - - -;
+#X obj 319 212 r projectplaystate;
+#X obj 319 236 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 346 259 spigot 0;
-#X obj 295 314 pack f f;
-#X msg 295 290 0;
-#X obj 295 338 unpack f f;
-#X obj 345 286 t f;
-#X floatatom 369 373 5 0 0 0 - - -;
-#X obj 39 349 s colorchangeItemIndex;
-#X obj 295 267 t b b;
-#X obj 342 205 t f;
-#X obj 176 131 delay 10;
+#X obj 274 259 spigot 0;
+#X obj 229 373 pack f f;
+#X msg 229 349 0;
+#X obj 229 397 unpack f f;
+#X floatatom 286 445 5 0 0 0 - - -;
+#X obj 274 236 t f;
+#X obj 217 192 pack f f;
+#X obj 217 215 unpack f f;
+#X obj 262 115 t f;
+#X msg 217 162 0;
+#X obj 274 285 t f b;
+#X obj 301 330 t b;
+#X obj 285 92 t f b;
+#X obj 312 137 t b;
+#X obj 312 115 delay 20;
+#X obj 301 307 delay 20;
+#X obj 286 420 t f;
 #X connect 0 0 7 0;
 #X connect 1 0 0 0;
 #X connect 1 1 6 0;
@@ -1536,28 +1462,35 @@ f f f f f f f f f f, f 179;
 #X connect 9 0 12 0;
 #X connect 10 0 0 0;
 #X connect 11 0 0 0;
-#X connect 11 0 17 0;
 #X connect 12 0 15 1;
-#X connect 12 1 30 0;
+#X connect 12 1 17 0;
 #X connect 13 1 14 0;
 #X connect 14 0 4 0;
-#X connect 14 0 27 0;
+#X connect 14 0 16 0;
 #X connect 15 0 13 0;
-#X connect 16 0 18 0;
-#X connect 17 0 28 0;
-#X connect 18 0 28 0;
-#X connect 18 0 29 0;
-#X connect 19 0 20 0;
-#X connect 20 0 21 1;
-#X connect 21 0 25 0;
-#X connect 22 0 24 0;
-#X connect 23 0 22 0;
-#X connect 24 1 26 0;
-#X connect 25 0 22 1;
-#X connect 28 0 23 0;
-#X connect 28 1 23 0;
-#X connect 29 0 21 0;
-#X connect 30 0 0 0;
+#X connect 17 0 0 0;
+#X connect 18 0 19 0;
+#X connect 19 0 34 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 1;
+#X connect 22 0 32 0;
+#X connect 23 0 25 0;
+#X connect 24 0 23 0;
+#X connect 25 1 38 0;
+#X connect 27 0 22 0;
+#X connect 28 0 29 0;
+#X connect 29 1 27 0;
+#X connect 30 0 28 1;
+#X connect 31 0 28 0;
+#X connect 32 0 23 1;
+#X connect 32 1 37 0;
+#X connect 33 0 24 0;
+#X connect 34 0 30 0;
+#X connect 34 1 36 0;
+#X connect 35 0 31 0;
+#X connect 36 0 35 0;
+#X connect 37 0 33 0;
+#X connect 38 0 26 0;
 #X restore 1114 363 pd OBGetSongSettingsIndex;
 #X text 43 -247 swing;
 #N canvas 423 84 672 582 buildvelocityprojectPath 0;
@@ -1660,71 +1593,9 @@ f f f f f f f f f f, f 179;
 #X obj 154 91 t b p;
 #X msg 154 121 0;
 #X obj 154 67 text define -k \$0-velocities;
-#A set 1 1 1 0 1 1 1 0 0 0 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 0 1 0 1 0
-0 1 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 1 1 0 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 0 0 1 1 0 0 0 1 0 0 0
-0 1 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \;;
+#A set fgdgff \; 1 0 0 1 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 \; 1 0 0 1 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 \;;
 #X obj 154 239 list trim;
 #N canvas -8 -8 1276 686 OBSendVelocitySteps 0;
 #X obj 24 24 inlet;
@@ -2857,8 +2728,6 @@ to ensure a file can be read.;
 #X connect 3 0 4 0;
 #X connect 4 0 1 0;
 #X restore 784 10 pd DisplayProjectDetails;
-#X obj 402 249 text get \$0-sequences 0 32;
-#X obj 154 213 text get \$0-velocities 0 32;
 #X obj 698 -12 s emode;
 #X msg 698 -36 1;
 #X obj 645 468 outlet;
@@ -2912,7 +2781,7 @@ to ensure a file can be read.;
 #X obj 626 -209 r incommingsave;
 #X obj 945 -266 r incommingnew;
 #X text 799 360 Send new master mixer track changes;
-#N canvas 46 46 1073 596 OBRecieveSettings 0;
+#N canvas 119 94 1073 596 OBRecieveSettings 0;
 #X text 207 286 Save changes from toggles to doc;
 #X obj 296 435 delay 10;
 #X obj 296 460 t b;
@@ -2935,7 +2804,7 @@ value" used to create the pack to which it is connected.;
 #X obj 24 390 t f;
 #X msg 24 371 0;
 #X msg 73 447 list \$3 \$4 \$5;
-#X floatatom 339 356 5 0 0 0 - - -;
+#X floatatom 323 367 5 0 0 0 - - -;
 #X floatatom 386 355 5 0 0 0 - - -;
 #X floatatom 437 353 5 0 0 0 - - -;
 #X floatatom 484 352 5 0 0 0 - - -;
@@ -2974,14 +2843,14 @@ value" used to create the pack to which it is connected.;
 #X floatatom 1162 288 5 0 0 0 - - -;
 #X obj 1162 263 t f;
 #X obj 1161 238 r emodecheckedvalue;
-#X obj 1203 288 t f;
-#N canvas -8 -8 1276 878 OBWriteSongChanges 0;
+#X obj 1217 284 t f;
+#N canvas -8 -8 1276 766 OBWriteSongChanges 0;
 #X obj 27 39 inlet;
 #X obj 77 41 inlet;
 #X obj 127 42 inlet;
 #X obj 34 283 outlet;
 #X floatatom 34 132 5 0 0 0 - - -;
-#N canvas -8 -8 1280 878 buildsongpprojectPath2 0;
+#N canvas -8 -8 1280 766 buildsongpprojectPath2 0;
 #X obj 96 86 f;
 #X text 126 86 file ID;
 #X obj 97 14 inlet;
@@ -3056,10 +2925,10 @@ value" used to create the pack to which it is connected.;
 #X restore 34 159 pd buildsongpprojectPath2;
 #X text 111 209 Build the file path. Will look like this tmpdata-osbs-pat-1.txt
 through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
-#N canvas 522 227 501 470 OBWhenEditStateChanged 0;
+#N canvas -4 -4 1280 718 OBWhenEditStateChanged 0;
 #X floatatom 285 122 5 0 0 0 - - -;
-#X msg 93 197 \$2;
-#X floatatom 93 219 5 0 0 0 - - -;
+#X msg 90 254 \$2;
+#X floatatom 90 276 5 0 0 0 - - -;
 #X text 322 88 Loaded pattern number;
 #X obj 138 73 change;
 #X obj 93 137 spigot 0;
@@ -3073,13 +2942,16 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X obj 62 20 inlet;
 #X obj 121 18 inlet;
 #X obj 180 19 inlet;
-#X obj 112 280 outlet;
-#X obj 93 173 pack \$1 \$2;
+#X obj 94 320 outlet;
+#X obj 90 230 pack \$1 \$2;
+#X obj 91 187 t b;
+#X msg 90 208 0;
+#X obj 91 163 delay 100;
 #X connect 0 0 8 0;
 #X connect 1 0 2 0;
 #X connect 2 0 14 0;
 #X connect 4 0 10 0;
-#X connect 5 0 15 0;
+#X connect 5 0 18 0;
 #X connect 6 0 5 1;
 #X connect 7 0 8 1;
 #X connect 8 0 15 1;
@@ -3089,6 +2961,9 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 12 0 0 0;
 #X connect 13 0 5 0;
 #X connect 15 0 1 0;
+#X connect 16 0 17 0;
+#X connect 17 0 15 0;
+#X connect 18 0 16 0;
 #X restore 34 106 pd OBWhenEditStateChanged;
 #X obj 222 81 r loadedprojectname;
 #X symbolatom 222 101 10 0 0 0 - - -;
@@ -3103,11 +2978,11 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 9 0 10 0;
 #X connect 10 0 5 1;
 #X restore 1160 312 pd OBWriteSongChanges;
-#X obj 1198 260 r loadedsongitem;
+#X obj 1301 261 r loadedsongitem;
 #X obj 1147 462 outlet;
 #X obj 1110 17 t s b b;
 #X floatatom 1036 81 5 0 0 0 - - -;
-#X floatatom 1303 258 5 0 0 0 - - -;
+#X floatatom 1299 284 5 0 0 0 - - -;
 #X obj 765 -14 t s b b;
 #X obj 1114 77 t b;
 #X obj 1115 58 delay 20;
@@ -3194,7 +3069,7 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 34 1 10 0;
 #X connect 35 0 32 0;
 #X restore 396 -203 pd initiateDefaultsCreation2;
-#N canvas 509 218 739 551 initiateDefaultsCreation 1;
+#N canvas 509 218 739 551 initiateDefaultsCreation 0;
 #X obj 103 162 symbol;
 #X msg 102 189 clear \, read \$1 \, rewind;
 #X obj 102 212 t b b a;
@@ -3275,6 +3150,10 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 34 1 10 0;
 #X connect 35 0 32 0;
 #X restore 165 -213 pd initiateDefaultsCreation;
+#X obj 1203 259 r selsongitem;
+#X floatatom 1251 285 5 0 0 0 - - -;
+#X obj 154 213 text get \$0-velocities 0 32;
+#X obj 402 249 text get \$0-sequences 0 32;
 #X connect 0 0 39 0;
 #X connect 1 0 40 0;
 #X connect 3 0 5 0;
@@ -3284,18 +3163,18 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 7 0 2 0;
 #X connect 8 0 9 0;
 #X connect 9 0 11 0;
-#X connect 9 1 94 3;
+#X connect 9 1 162 3;
 #X connect 10 0 44 0;
-#X connect 11 0 94 0;
-#X connect 13 0 159 0;
+#X connect 11 0 162 0;
+#X connect 13 0 157 0;
 #X connect 15 0 42 0;
 #X connect 15 0 84 0;
 #X connect 16 0 18 0;
 #X connect 17 0 19 0;
 #X connect 18 0 17 0;
 #X connect 19 0 20 0;
-#X connect 20 0 97 0;
-#X connect 20 0 154 0;
+#X connect 20 0 95 0;
+#X connect 20 0 152 0;
 #X connect 22 0 69 0;
 #X connect 24 0 79 0;
 #X connect 26 0 49 0;
@@ -3321,18 +3200,18 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 46 2 71 0;
 #X connect 47 0 36 0;
 #X connect 47 1 49 1;
-#X connect 47 1 152 0;
+#X connect 47 1 150 0;
 #X connect 49 0 29 0;
 #X connect 49 1 29 3;
-#X connect 51 0 160 0;
+#X connect 51 0 158 0;
 #X connect 53 0 54 0;
-#X connect 53 1 95 3;
-#X connect 54 0 95 0;
+#X connect 53 1 161 3;
+#X connect 54 0 161 0;
 #X connect 55 0 53 0;
 #X connect 56 0 57 0;
 #X connect 58 0 59 0;
 #X connect 58 1 63 2;
-#X connect 60 0 94 0;
+#X connect 60 0 162 0;
 #X connect 61 0 64 0;
 #X connect 62 0 63 0;
 #X connect 63 0 55 0;
@@ -3340,7 +3219,7 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 65 0 62 0;
 #X connect 66 0 61 0;
 #X connect 67 0 70 0;
-#X connect 68 0 98 0;
+#X connect 68 0 96 0;
 #X connect 69 0 67 0;
 #X connect 69 0 75 0;
 #X connect 69 1 67 3;
@@ -3356,73 +3235,74 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 80 0 81 0;
 #X connect 81 0 22 0;
 #X connect 82 0 22 0;
-#X connect 82 0 130 0;
+#X connect 82 0 128 0;
 #X connect 84 0 76 0;
 #X connect 85 0 86 0;
 #X connect 91 0 80 0;
 #X connect 92 0 73 0;
-#X connect 94 0 10 0;
-#X connect 95 0 56 0;
-#X connect 97 0 96 0;
-#X connect 100 0 95 0;
-#X connect 101 0 100 0;
+#X connect 95 0 94 0;
+#X connect 98 0 161 0;
+#X connect 99 0 98 0;
+#X connect 100 0 99 0;
+#X connect 101 0 162 0;
 #X connect 102 0 101 0;
-#X connect 103 0 94 0;
-#X connect 104 0 103 0;
+#X connect 103 0 102 0;
+#X connect 104 0 59 1;
 #X connect 105 0 104 0;
-#X connect 106 0 59 1;
-#X connect 107 0 106 0;
+#X connect 106 0 105 0;
+#X connect 107 0 12 1;
 #X connect 108 0 107 0;
-#X connect 109 0 12 1;
-#X connect 110 0 109 0;
-#X connect 111 0 110 0;
-#X connect 112 0 65 0;
-#X connect 113 0 66 0;
+#X connect 109 0 108 0;
+#X connect 110 0 65 0;
+#X connect 111 0 66 0;
+#X connect 112 0 113 0;
+#X connect 113 0 51 0;
 #X connect 114 0 115 0;
-#X connect 115 0 51 0;
-#X connect 116 0 117 0;
-#X connect 117 0 13 0;
-#X connect 118 0 63 1;
+#X connect 115 0 13 0;
+#X connect 116 0 63 1;
+#X connect 117 0 116 0;
+#X connect 118 0 64 1;
 #X connect 119 0 118 0;
-#X connect 120 0 64 1;
-#X connect 121 0 120 0;
+#X connect 120 0 121 0;
+#X connect 121 0 149 0;
 #X connect 122 0 123 0;
-#X connect 123 0 151 0;
+#X connect 123 0 24 0;
+#X connect 123 1 72 0;
 #X connect 124 0 125 0;
-#X connect 125 0 24 0;
-#X connect 125 1 72 0;
-#X connect 126 0 127 0;
-#X connect 127 0 20 0;
-#X connect 128 0 20 0;
-#X connect 129 0 128 0;
-#X connect 131 0 132 0;
-#X connect 132 0 38 0;
-#X connect 133 0 131 0;
-#X connect 134 0 92 0;
-#X connect 135 0 85 0;
-#X connect 136 0 134 0;
-#X connect 137 0 135 0;
-#X connect 139 0 140 0;
-#X connect 139 1 148 2;
-#X connect 141 0 140 1;
-#X connect 142 0 141 0;
+#X connect 125 0 20 0;
+#X connect 126 0 20 0;
+#X connect 127 0 126 0;
+#X connect 129 0 130 0;
+#X connect 130 0 38 0;
+#X connect 131 0 129 0;
+#X connect 132 0 92 0;
+#X connect 133 0 85 0;
+#X connect 134 0 132 0;
+#X connect 135 0 133 0;
+#X connect 137 0 138 0;
+#X connect 137 1 146 2;
+#X connect 139 0 138 1;
+#X connect 140 0 139 0;
+#X connect 141 0 140 0;
+#X connect 142 0 146 0;
 #X connect 143 0 142 0;
-#X connect 144 0 148 0;
-#X connect 145 0 144 0;
-#X connect 146 0 145 0;
-#X connect 147 0 148 1;
-#X connect 148 0 26 0;
-#X connect 149 0 147 0;
-#X connect 149 0 153 0;
-#X connect 151 0 27 1;
-#X connect 151 1 156 0;
-#X connect 151 2 150 0;
-#X connect 154 0 90 0;
-#X connect 154 1 93 0;
-#X connect 154 2 82 0;
-#X connect 155 0 27 0;
-#X connect 156 0 155 0;
-#X connect 157 0 55 0;
-#X connect 158 0 8 0;
-#X connect 159 0 158 0;
-#X connect 160 0 157 0;
+#X connect 144 0 143 0;
+#X connect 145 0 146 1;
+#X connect 145 0 160 0;
+#X connect 146 0 26 0;
+#X connect 147 0 151 0;
+#X connect 149 0 27 1;
+#X connect 149 1 154 0;
+#X connect 149 2 148 0;
+#X connect 152 0 90 0;
+#X connect 152 1 93 0;
+#X connect 152 2 82 0;
+#X connect 153 0 27 0;
+#X connect 154 0 153 0;
+#X connect 155 0 55 0;
+#X connect 156 0 8 0;
+#X connect 157 0 156 0;
+#X connect 158 0 155 0;
+#X connect 159 0 145 0;
+#X connect 161 0 56 0;
+#X connect 162 0 10 0;

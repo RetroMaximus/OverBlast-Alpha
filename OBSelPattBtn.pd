@@ -1,7 +1,7 @@
-#N canvas 490 216 450 589 10;
+#N canvas 469 83 450 589 10;
 #X obj 0 0 cnv 7 7 7 \$1-patternbtn-send \$1-patternbtn-recv empty
-3 20 0 10 -44926 -1 0;
-#N canvas -8 -8 1280 878 selactiveBtn1 0;
+3 20 0 10 -166441 -1 0;
+#N canvas -8 -8 1280 766 selactiveBtn1 1;
 #X floatatom 232 7 5 0 0 0 - - -;
 #X floatatom 380 154 5 0 0 0 - - -;
 #X obj 339 156 ==;
@@ -37,7 +37,7 @@
 #X obj 168 8 inlet;
 #X obj 232 112 t f f f b;
 #X obj 233 231 outlet;
-#X obj 232 60 count 1 64;
+#X obj 146 58 count 1 64;
 #X floatatom 517 568 5 0 0 0 - - -;
 #X obj 339 488 unpack f f f;
 #X obj 475 669 symbol;
@@ -78,6 +78,7 @@
 #X obj 598 441 pack f f f;
 #X obj 424 374 r aplcolor-send;
 #X obj 656 401 r plcolor-send;
+#X obj 597 356 delay 20;
 #X connect 0 0 24 0;
 #X connect 2 0 4 0;
 #X connect 3 0 14 0;
@@ -102,7 +103,6 @@
 #X connect 21 0 25 0;
 #X connect 22 0 31 0;
 #X connect 23 0 26 0;
-#X connect 24 0 35 0;
 #X connect 25 0 19 1;
 #X connect 26 0 19 0;
 #X connect 27 0 15 0;
@@ -110,12 +110,11 @@
 #X connect 30 0 12 0;
 #X connect 31 0 2 1;
 #X connect 31 0 1 0;
-#X connect 32 0 0 0;
+#X connect 32 0 29 0;
 #X connect 33 0 54 1;
 #X connect 33 1 73 1;
 #X connect 33 2 2 0;
 #X connect 33 3 34 0;
-#X connect 35 0 29 0;
 #X connect 36 0 53 0;
 #X connect 37 1 36 0;
 #X connect 37 2 51 0;

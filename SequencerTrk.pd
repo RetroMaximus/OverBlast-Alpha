@@ -1,13 +1,13 @@
-#N canvas 285 144 891 438 10;
-#X obj 1 2 cnv 15 670 56 empty empty empty 20 12 0 14 -233017 -66577
-0;
+#N canvas 235 144 941 438 10;
+#X obj 0 0 cnv 15 882 62 seqbuilderbg-send seqbuilderbg-recv empty
+20 12 0 14 -195568 -66577 0;
 #X obj 1 1 Cntrls \$1;
 #X obj 89 33 vradio 10 1 0 2 \$1-triggers-send \$1-triggers-recv empty
 -50 8 0 10 -262144 -1 -262144 0;
-#X obj 101 30 cnv 15 50 15 empty empty One_Shot 4 8 0 10 -262144 -66577
-0;
-#X obj 101 42 cnv 15 50 15 empty empty Loop 4 8 0 10 -262144 -66577
-0;
+#X obj 102 33 cnv 10 50 10 empty looplbl-recv One_Shot 4 6 0 10 -195568
+-1 0;
+#X obj 102 43 cnv 10 50 15 empty looplbl-recv Loop 4 6 0 10 -195568
+-1 0;
 #X floatatom 125 103 5 0 0 0 - - -;
 #X obj 127 122 t f;
 #X msg 332 123 0;
@@ -45,8 +45,8 @@ empty -2 -8 0 10 -162280 -1 -1 0 1;
 #X floatatom 438 98 6 0 0 0 - - -;
 #X msg 435 256 label Hard:\$1;
 #X msg 267 259 label Med:\$1;
-#X obj 0 1 cnv 15 73 50 empty empty empty 20 12 0 14 -128992 -66577
-0;
+#X obj 0 0 cnv 15 73 50 empty presetvelbg-recv empty 20 12 0 14 -195568
+-66577 0;
 #X obj 6 4 hsl 60 13 0.1 1 0 0 \$1-softvalue-send \$1-softvalue-recv
 Soft:0.3 2 7 0 10 -90881 -1 -1 1311 1;
 #X obj 6 19 hsl 60 13 0.2 1 0 0 \$1-medvalue-send \$1-medvalue-recv
@@ -985,8 +985,8 @@ empty -2 -8 0 10 -162280 -1 -1 0 1;
 empty -2 -8 0 10 -162280 -1 -1 0 1;
 #X obj 210 46 hsl 40 10 0 127 0 0 \$1-fadeoutdur-send \$1-fadeoutdur-recv
 empty -2 -8 0 10 -162280 -1 -1 0 1;
-#X obj 204 3 cnv 10 50 10 empty empty Effects 3 7 0 10 -233017 -66577
-0;
+#X obj 209 5 cnv 10 40 10 efflbl-send efflbl-recv Effects 3 7 0 9 -195568
+-1 0;
 #X text 551 277 Play;
 #X obj 412 180 loadbang;
 #X obj 412 207 \$1;

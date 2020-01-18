@@ -2,6 +2,15 @@ OverBlast ReadMe Document
 
 - Recent Fixes and additions
 
+Fixes 1/18/2020
+- Aditional cleaning up of the songbuilder currently much more stable.
+- More color scheme options provided.
+- Internally change how the active playlist items are displayed. Also while in play mode.
+- Pattern selector color will changed to the corrisponding playlist item "Patts" value while in play mode.
+- Song playlist data will be overwritten if the page is changed.(Fixed)
+- Atoms in the song list items will change when not scrolled. Always seams to be +2 items ahead.(Fixed)
+- Sequencer updated to accomidate color changes.
+
 Fixes 12/31/2019
 
 - Added abilty to change color scheme. To change permament startup
@@ -24,24 +33,19 @@ Known Bugs
 
 Recently fix but incase these errors show again. A lot of red messages when Overblast
 first starts indicating pattern or velocity default files are missing you should do the following.
-Click Create_New button to create temp defaults then close and reopen Overblast.
+Click Create_New button to create temp default files then close and reopen Overblast.
 
 Song Playlist -
 
-- All song playlist list items can not be managed only the first 16. Due to pages buttons.
-- Song playlist data will be overwritten if the page is changed.
-- Atoms in the song list items will change when not scrolled. Alwasy seams to be +2 items ahead.
 - EOS check box does not work. Not developed at all as of yet.
 - Pages (Prev) and [Next] buttons both work but does not change songlist items visually.
 - Pause song does not work. Only can stop and play from begining of the song.
 - Mixdown and Stems toggle not working. Not developed at all as of yet. 
 - Export Song to Wave button is not working. Not developed at all as of yet. 
 
-
 Sample Editor -
 
 - Trucate button can be buggy.
-
 
 Sequencer - 
 
