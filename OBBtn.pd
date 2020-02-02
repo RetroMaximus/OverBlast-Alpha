@@ -1,0 +1,644 @@
+#N struct 1025-template-drawthings float x float y float c float cf
+float w;
+#N struct 4188-bang float c float bc symbol text;
+#N struct 1003-template-drawthings float x float y float c float cf
+float w;
+#N canvas 273 30 1280 718 10;
+#X obj 1066 451 hradio 20 1 1 4 \$0-director empty send to area -80
+8 0 10 -4032 -258113 -1 0;
+#X obj 1067 479 s \$0-main-director;
+#X msg 1067 430 0;
+#X obj 1044 366 loadbang;
+#X text 1108 578 example 3;
+#X obj 1133 368 bng 20 250 50 0 empty empty empty 17 7 0 10 -4032 -1
+-1;
+#X obj 1 52 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1086 534 s \$0-area-1, f 14;
+#N canvas 436 28 745 631 DrawBtn 0;
+#X msg 92 -179 new;
+#X obj 170 -110 float;
+#X obj 213 -109 + 1;
+#X obj 180 -240 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 243 -109 0;
+#X obj 192 -31 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 192 -55 0;
+#X obj 168 -265 inlet;
+#X text 194 -159 100ms seems to be the fastest draw speed for this
+;
+#X obj 168 0 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+20 21 22 23 24 25 26 27 28 29 30 32 32 33 34;
+#X obj 192 -77 sel 34;
+#X obj 91 190 s \$0-params;
+#X obj 543 -173 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12700 1;
+#X floatatom 542 -30 5 0 0 0 - - -;
+#X obj 133 -159 metro 100;
+#X text 572 178 Background Box;
+#X text 229 140 Btn Box;
+#X text 228 99 Right Circle;
+#X text 184 63 Left Circles;
+#X msg 199 155 fillbox 8.5 2 81.5 17 0 0 2;
+#N canvas 64 109 279 313 canvascolor 0;
+#X obj 44 40 inlet;
+#X obj 104 155 +;
+#X obj 44 201 +;
+#X obj 44 224 - 1;
+#X obj 44 247 outlet;
+#X obj 44 63 unpack f f f;
+#X floatatom 117 260 5 0 127 0 - - -;
+#X obj 44 109 * 65536;
+#X obj 104 109 * 256;
+#X obj 154 109 * 1;
+#X connect 0 0 5 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 0;
+#X connect 5 0 7 0;
+#X connect 5 1 8 0;
+#X connect 5 2 9 0;
+#X connect 7 0 2 0;
+#X connect 8 0 1 0;
+#X connect 9 0 1 1;
+#X restore 553 158 pd canvascolor;
+#X obj 553 74 pack f f f f;
+#X obj 552 96 t l;
+#X obj 553 117 list trim;
+#X msg 553 136 \$1 \$2 \$3;
+#X obj 541 1 t f b;
+#X msg 552 26 0;
+#X obj 550 46 t f;
+#X obj 600 -1 t f b;
+#X obj 644 0 t f b;
+#X obj 601 -166 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 498 1;
+#X floatatom 600 -23 5 0 0 0 - - -;
+#X obj 646 -169 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 645 -26 5 0 0 0 - - -;
+#X msg 561 -209 255;
+#X msg 622 -210 0;
+#X msg 590 -209 10;
+#X obj 572 -261 delay 10;
+#X obj 570 -243 t b b b;
+#X msg 556 197 fillbox 0 0 90 17 \$1 \$1 0;
+#X msg 186 83 fillcircle 10 9.5 10 8 0 0 1;
+#X msg 196 116 fillcircle 80 9.5 10 8 0 0 1;
+#X obj 161 -215 t b b b b b;
+#X connect 0 0 11 0;
+#X connect 0 0 39 0;
+#X connect 1 0 2 0;
+#X connect 1 0 9 0;
+#X connect 1 0 10 0;
+#X connect 2 0 1 1;
+#X connect 3 0 42 0;
+#X connect 4 0 1 1;
+#X connect 5 0 14 0;
+#X connect 6 0 5 0;
+#X connect 7 0 42 0;
+#X connect 9 2 40 0;
+#X connect 9 3 41 0;
+#X connect 9 4 19 0;
+#X connect 10 0 4 0;
+#X connect 10 0 6 0;
+#X connect 12 0 13 0;
+#X connect 13 0 25 0;
+#X connect 14 0 1 0;
+#X connect 19 0 11 0;
+#X connect 20 0 39 0;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 24 0;
+#X connect 24 0 20 0;
+#X connect 25 0 21 1;
+#X connect 25 1 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 21 0;
+#X connect 28 0 21 2;
+#X connect 28 1 26 0;
+#X connect 29 0 21 3;
+#X connect 29 1 26 0;
+#X connect 30 0 31 0;
+#X connect 31 0 28 0;
+#X connect 32 0 33 0;
+#X connect 33 0 29 0;
+#X connect 34 0 12 0;
+#X connect 35 0 32 0;
+#X connect 36 0 30 0;
+#X connect 37 0 38 0;
+#X connect 38 0 34 0;
+#X connect 38 1 36 0;
+#X connect 38 2 35 0;
+#X connect 39 0 11 0;
+#X connect 40 0 11 0;
+#X connect 41 0 11 0;
+#X connect 42 1 0 0;
+#X connect 42 2 5 0;
+#X connect 42 3 4 0;
+#X connect 42 4 37 0;
+#X restore 1106 596 pd DrawBtn;
+#X obj 18 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 35 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 52 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 69 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 86 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 103 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 120 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 137 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 154 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 171 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 188 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 205 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 222 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 239 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 256 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 273 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 290 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 307 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 324 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 341 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 358 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 375 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 392 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 409 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 426 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 443 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 460 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 477 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 494 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 511 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 528 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 545 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 562 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 579 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 596 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 613 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 630 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 647 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 664 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 681 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 698 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 715 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 732 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 749 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 766 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 783 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 800 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 817 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 834 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 851 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 868 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 885 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 902 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 919 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 936 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 953 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 970 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 987 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1004 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1021 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1038 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1055 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1072 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1089 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1106 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1123 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1140 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1157 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1174 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1191 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1208 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1225 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1242 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1259 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1276 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1293 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1310 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1327 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1344 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1361 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1378 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1395 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1412 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1429 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1446 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1463 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1480 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1497 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1514 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1531 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1548 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1565 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1582 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1599 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1616 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1633 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1650 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1667 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1684 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1701 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1718 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1735 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1752 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1769 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1786 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1803 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1820 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1837 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1854 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1871 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1888 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1905 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1922 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1939 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1956 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1973 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 1990 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2007 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2024 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2041 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2058 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2075 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2092 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2109 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2126 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2143 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 2160 1 bng 17 250 50 0 \$0-btnBang-send \$0-btnBang-recv empty
+20 7 0 10 -262144 -1 -1;
+#X obj 106 -42 r \$0-area-1;
+#N canvas 570 172 450 300 params-director 0;
+#X obj 84 12 r \$0-director;
+#X obj 34 169 r \$0-params;
+#X obj 34 228 s \$0-area-1;
+#X obj 34 200 spigot;
+#X msg 333 121 0;
+#X obj 112 170 r \$0-params;
+#X obj 112 201 spigot;
+#X obj 188 170 r \$0-params;
+#X obj 188 201 spigot;
+#X obj 110 229 s \$0-area-2;
+#X obj 188 229 s \$0-area-3;
+#X obj 67 104 t b b;
+#X msg 67 129 1;
+#X obj 112 104 t b b;
+#X msg 112 129 1;
+#X obj 157 104 t b b;
+#X msg 157 129 1;
+#X obj 84 43 sel 0 1 2 3;
+#X connect 0 0 17 0;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 1;
+#X connect 4 0 6 1;
+#X connect 4 0 8 1;
+#X connect 5 0 6 0;
+#X connect 6 0 9 0;
+#X connect 7 0 8 0;
+#X connect 8 0 10 0;
+#X connect 11 0 12 0;
+#X connect 11 1 4 0;
+#X connect 12 0 3 1;
+#X connect 13 0 14 0;
+#X connect 13 1 4 0;
+#X connect 14 0 6 1;
+#X connect 15 0 16 0;
+#X connect 15 1 4 0;
+#X connect 16 0 8 1;
+#X connect 17 0 11 0;
+#X connect 17 1 13 0;
+#X connect 17 2 15 0;
+#X connect 17 3 12 0;
+#X connect 17 3 14 0;
+#X connect 17 3 16 0;
+#X restore 195 -43 pd params-director;
+#X obj 2 1 OBButton-draw;
+#N canvas -4 -4 1280 718 \$0-display 0;
+#X scalar 4188-bang 777 777 Button_Text \;;
+#X coords 0 0 1 1 113 20 2 0 0;
+#X restore 0 40 pd \$0-display;
+#X obj 0 101 cnv 17 100 17 \$1-EzBtntxt-send \$1-EzBtntxt-recv test
+10 8 0 13 -166441 -33289 0;
+#X obj 342 333 loadbang;
+#X floatatom -149 183 5 0 0 0 - - -;
+#X floatatom -93 180 5 0 0 0 - - -;
+#X text -156 125 width;
+#X text -111 123 height;
+#X obj -36 155 \$1;
+#X obj 640 517 s \$1-EzBtntxt-recv;
+#X floatatom -41 181 5 0 0 0 - - -;
+#X obj -149 249 pack f f f f, f 23;
+#X msg -148 369 \; \$4-EzBtntxt-recv vis_size \$2 \$3;
+#X text -61 123 button id;
+#X obj 381 491 t b f;
+#X obj 440 490 t b f;
+#X obj 381 528 pack f f f f, f 22;
+#X text 408 559 Adjust Font Size;
+#X obj -149 161 \$2;
+#X obj -92 153 \$3;
+#X obj 486 488 t b f;
+#X msg 382 578 \; \$4-EzBtntxt-recv label_font \$2 \$3;
+#X obj 442 444 - 4;
+#X msg 17 728 \; \$4-EzBtntxt-recv label_pos \$2 \$3;
+#X floatatom 19 578 5 0 0 0 - - -;
+#X obj 18 636 t b f;
+#X obj 77 635 t b f;
+#X obj 18 673 pack f f f f, f 22;
+#X obj 119 635 t b f;
+#X floatatom 76 569 5 0 0 0 - - -;
+#X obj 76 591 * 2;
+#X obj 92 547 / 4, f 4;
+#X obj 21 499 / 8, f 4;
+#X floatatom 760 773 5 0 0 0 - - -;
+#X obj 770 635 vsl 15 128 -1920 1920 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 18 612 -;
+#X text 756 601 offset;
+#X obj 283 614 vsl 15 128 0 1920 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 66 1;
+#X text 367 620 zero real start position;
+#X floatatom 294 759 5 0 0 0 - - -;
+#X text 321 644 slider to be used if adjustment is needed. If positioning
+is needed change the 0 value of this message box to the value of the
+slider outlet maually. To save the real start position change the message
+not the number atom;
+#X text 793 694 range from -1920 to 1920 offset can be applied to the
+text position. This is optional. To save the offset change the message
+not the number atom. The inlet for the slider is intentionally skiped.
+;
+#X floatatom 823 563 5 0 0 0 - - -;
+#X text -120 348 Set size of the button;
+#X text 32 712 Adjust the Text position;
+#X text 632 432 Set the text of the button;
+#X msg 725 603 0;
+#X obj -102 435 outlet;
+#X obj 585 327 inlet;
+#X msg 638 497 label \$1;
+#X obj 361 848 s \$0-this;
+#X obj 361 802 t l l;
+#X obj 144 841 namecanvas \$0-this;
+#X obj 773 344 inlet;
+#X msg 342 600 5;
+#X obj 688 326 inlet;
+#X obj 894 354 inlet;
+#X obj 853 408 t b f;
+#X obj 912 407 t b f;
+#X obj 853 445 pack f f f f, f 22;
+#X obj 958 405 t b f;
+#X msg 852 500 \; \$4-EzBtntxt-recv color \$2 \$3;
+#X obj 944 351 inlet;
+#X text 867 484 Adjust Color Of Button;
+#X obj 640 409 symbol;
+#X msg 638 382 symbol \$1;
+#X symbolatom 627 358 10 0 0 0 - - -;
+#X obj 361 756 pack f f f;
+#X obj -149 211 t b f f b;
+#X msg 340 709 0;
+#X obj 342 733 t f;
+#X obj -93 207 t b f f b;
+#X msg 361 825 coords 0 \$3 \$2 0 \$2 \$3 2 0 0;
+#X obj -23 209 t b f b;
+#X obj 171 573 t b;
+#X obj 1043 389 t b b b b b;
+#X floatatom 68 451 5 0 0 0 - - -;
+#X obj 66 425 \$2;
+#X floatatom 147 466 5 0 0 0 - - -;
+#X obj 146 432 \$3;
+#X obj 20 530 + 20;
+#X obj 667 28 OBButton-draw;
+#X obj 393 731 t f;
+#X obj 420 732 t f;
+#X msg 1137 418 0;
+#X obj 251 495 - 1;
+#X obj 249 516 t f;
+#X msg 1090 511 size 80 17 100 17 \, new;
+#X obj 215 557 + 5;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 213 0;
+#X connect 5 0 8 0;
+#X connect 5 0 222 0;
+#X connect 6 0 185 0;
+#X connect 136 0 138 0;
+#X connect 141 0 146 0;
+#X connect 141 0 156 0;
+#X connect 141 0 157 0;
+#X connect 141 0 184 0;
+#X connect 141 0 217 0;
+#X connect 141 0 215 0;
+#X connect 141 0 225 0;
+#X connect 142 0 206 0;
+#X connect 142 0 152 0;
+#X connect 143 0 160 0;
+#X connect 143 0 209 0;
+#X connect 146 0 148 0;
+#X connect 148 0 166 0;
+#X connect 148 0 198 0;
+#X connect 148 0 211 0;
+#X connect 148 0 158 0;
+#X connect 149 0 150 0;
+#X connect 149 0 212 0;
+#X connect 152 0 154 0;
+#X connect 152 1 154 1;
+#X connect 153 0 154 0;
+#X connect 153 1 154 2;
+#X connect 154 0 159 0;
+#X connect 156 0 142 0;
+#X connect 157 0 143 0;
+#X connect 158 0 154 0;
+#X connect 158 1 154 3;
+#X connect 160 0 153 0;
+#X connect 162 0 173 0;
+#X connect 163 0 165 0;
+#X connect 163 1 165 1;
+#X connect 164 0 165 0;
+#X connect 164 1 165 2;
+#X connect 165 0 161 0;
+#X connect 166 0 165 0;
+#X connect 166 1 165 3;
+#X connect 167 0 168 0;
+#X connect 168 0 164 0;
+#X connect 169 0 167 0;
+#X connect 170 0 218 0;
+#X connect 171 0 173 1;
+#X connect 172 0 171 0;
+#X connect 173 0 163 0;
+#X connect 175 0 177 0;
+#X connect 177 0 162 0;
+#X connect 180 0 175 0;
+#X connect 184 0 171 0;
+#X connect 186 0 204 0;
+#X connect 187 0 147 0;
+#X connect 189 0 210 0;
+#X connect 191 0 6 0;
+#X connect 192 0 177 0;
+#X connect 193 0 180 0;
+#X connect 194 0 195 0;
+#X connect 195 0 197 0;
+#X connect 195 1 197 1;
+#X connect 196 0 197 0;
+#X connect 196 1 197 2;
+#X connect 197 0 199 0;
+#X connect 198 0 197 0;
+#X connect 198 1 197 3;
+#X connect 200 0 196 0;
+#X connect 202 0 187 0;
+#X connect 203 0 202 0;
+#X connect 204 0 203 0;
+#X connect 205 0 189 0;
+#X connect 206 0 149 0;
+#X connect 206 1 149 1;
+#X connect 206 2 226 0;
+#X connect 207 0 208 0;
+#X connect 208 0 205 0;
+#X connect 209 0 149 0;
+#X connect 209 1 149 2;
+#X connect 209 2 221 0;
+#X connect 210 0 188 0;
+#X connect 211 0 149 0;
+#X connect 211 1 149 3;
+#X connect 212 0 207 0;
+#X connect 213 1 2 0;
+#X connect 213 2 225 0;
+#X connect 213 3 5 0;
+#X connect 214 0 170 0;
+#X connect 215 0 214 0;
+#X connect 216 0 169 0;
+#X connect 216 0 223 0;
+#X connect 217 0 216 0;
+#X connect 218 0 162 0;
+#X connect 220 0 205 1;
+#X connect 221 0 205 2;
+#X connect 222 0 225 0;
+#X connect 223 0 224 0;
+#X connect 225 0 7 0;
+#X connect 226 0 220 0;
+#X coords 0 17 105 0 105 17 2 0 0;

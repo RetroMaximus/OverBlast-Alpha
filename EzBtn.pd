@@ -1,13 +1,13 @@
-#N struct 3268-bang float c float bc symbol text;
+#N struct 1008-bang float c float bc symbol text;
 #N canvas 620 219 605 483 10;
-#X obj 30 144 outlet;
+#X obj 447 115 outlet;
 #N canvas 0 85 450 300 \$0-display 0;
-#X scalar 3268-bang 777 777 Button_Text \;;
-#X coords 0 0 1 1 32 17 2 0 0;
+#X scalar 1008-bang 777 777 Button_Text \;;
+#X coords 0 0 1 1 200 140 2 0 0;
 #X restore 30 30 pd \$0-display;
 #X obj 88 194 bng 15 250 50 1 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 333 405 348 286 \$0-bang 0;
+#N canvas 333 405 348 286 \$0-bang 1;
 #X obj 44 109 unpack s p f;
 #X obj 44 224 outlet;
 #X obj 44 132 sel click;
@@ -29,9 +29,9 @@
 #X connect 6 0 3 0;
 #X connect 7 0 0 0;
 #X connect 10 0 3 0;
-#X restore 30 122 pd \$0-bang;
-#X obj 77 147 bng 15 250 50 1 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X restore 447 93 pd \$0-bang;
+#X obj 494 118 bng 15 250 50 1 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X obj 30 191 loadbang;
 #X obj 141 260 s pd-\$0-display;
 #X obj 141 283 symbol pd-\$0-display;
@@ -43,7 +43,7 @@
 #X msg 30 329 777 777;
 #X obj 30 421 set -symbol \$0-bang text;
 #X obj 30 214 t b b b;
-#X obj 30 99 namecanvas \$0-this;
+#X obj 447 70 namecanvas \$0-this;
 #X floatatom 328 284 5 0 0 0 - - -;
 #X obj 328 329 pack;
 #X obj 328 421 s \$0-this;
@@ -61,7 +61,7 @@
 #X obj 301 240 \$2;
 #X obj 382 238 \$3;
 #X floatatom 495 190 5 0 0 0 - - -;
-#X obj 103 173 print \$0-bang;
+#X obj 527 126 print \$0-bang;
 #X msg 30 398 symbol Button_Text;
 #X connect 2 0 15 0;
 #X connect 3 0 0 0;
@@ -95,4 +95,4 @@
 #X connect 31 0 17 0;
 #X connect 32 0 21 0;
 #X connect 35 0 14 0;
-#X coords 0 17 32 0 32 17 2 30 30;
+#X coords 0 0 0 0 200 140 2 30 30;

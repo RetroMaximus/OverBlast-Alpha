@@ -6,7 +6,7 @@
 #X obj 57 34 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 2 6 vsl 15 46 0 0.9 0 0 \$1-vol-send \$1-vol-recv Seq:1 17 40
-0 10 -262144 -1 -1 0 1;
+0 10 -262144 -1 -1 2500 1;
 #X obj 28 5 tgl 10 0 \$0-trkmute-send \$0-trkmute-recv M -8 5 0 10
 -99865 -1 -1 0 1;
 #X obj 49 5 tgl 10 0 \$0-trksolo-send \$0-trksolo-recv S -8 5 0 10
@@ -60,21 +60,25 @@
 #X connect 13 0 12 0;
 #X restore 270 211 pd GetMixerTrackIndex \$1;
 #X f 44;
-#N canvas 0 50 450 300 OBAssignSampleIndex 0;
-#X obj 45 135 s arg1-recv;
-#X obj 43 82 pack \$1 \$2;
-#X msg 43 113 \$2;
-#X obj 43 56 t b;
-#X floatatom 61 156 5 0 0 0 - - -;
-#X text 31 170 index after loaded;
+#N canvas 0 50 450 300 OBAssignSampleIndex 1;
+#X obj 44 214 s arg1-recv;
+#X obj 38 42 t b;
+#X floatatom 60 235 5 0 0 0 - - -;
+#X text 30 249 index after loaded;
 #X obj 30 19 inlet;
 #X obj 97 20 inlet;
-#X connect 1 0 2 0;
-#X connect 2 0 0 0;
-#X connect 2 0 4 0;
-#X connect 3 0 1 0;
-#X connect 6 0 3 0;
-#X connect 7 0 1 1;
+#X msg 36 71 0;
+#X obj 38 98 t f;
+#X obj 40 120 pack f f;
+#X obj 39 141 unpack f f;
+#X connect 1 0 6 0;
+#X connect 4 0 1 0;
+#X connect 5 0 8 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 1 0 0;
+#X connect 9 1 2 0;
 #X restore 315 296 pd OBAssignSampleIndex;
 #X msg 270 169 \$1;
 #X obj 51 -51 r stepvol1;
@@ -231,9 +235,9 @@
 #X obj 420 145 t b;
 #X text 423 13 Played Sound File Path;
 #X obj 587 148 t f;
-#X obj 666 47 print;
 #X msg 531 261 label Seq:\$1;
 #X floatatom 184 38 5 0 0 0 - - -;
+#X obj 105 -29 r loadedvol;
 #X connect 1 0 20 0;
 #X connect 1 0 40 0;
 #X connect 2 0 15 0;
@@ -242,7 +246,7 @@
 #X connect 4 0 39 0;
 #X connect 5 0 39 1;
 #X connect 8 0 9 0;
-#X connect 10 0 45 0;
+#X connect 10 0 44 0;
 #X connect 13 0 8 0;
 #X connect 13 0 14 0;
 #X connect 13 0 18 0;
@@ -262,18 +266,18 @@
 #X connect 24 0 25 0;
 #X connect 25 0 3 0;
 #X connect 26 0 27 0;
-#X connect 27 0 46 0;
+#X connect 27 0 45 0;
 #X connect 28 0 17 1;
 #X connect 29 0 30 0;
 #X connect 30 0 43 0;
 #X connect 34 0 32 0;
 #X connect 35 0 34 0;
-#X connect 35 0 44 0;
 #X connect 36 0 35 0;
 #X connect 40 0 20 0;
 #X connect 40 1 17 0;
 #X connect 41 0 40 1;
 #X connect 43 0 31 0;
-#X connect 45 0 7 0;
-#X connect 46 0 18 0;
+#X connect 44 0 7 0;
+#X connect 45 0 18 0;
+#X connect 46 0 3 0;
 #X coords 0 -1 1 1 84 60 2 0 0;
