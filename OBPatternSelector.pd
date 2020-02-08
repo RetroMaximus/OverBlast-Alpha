@@ -1,0 +1,99 @@
+#N canvas 227 49 959 609 10;
+#X obj 100 100 cnv 15 378 35 empty patsel-recv empty 20 12 0 14 -195568
+-66577 0;
+#X obj 236 101 cnv 15 60 15 patttab-send patttab-recv 1-4 22 9 0 10
+-166441 -1 0;
+#X obj 296 101 cnv 15 60 15 empty pattborder-recv 5-8 22 9 0 10 -66577
+-1 0;
+#X obj 356 101 cnv 15 60 15 patttab-send patttab-recv 9-12 20 9 0 10
+-166441 -1 0;
+#X obj 416 101 cnv 15 60 15 empty pattborder-recv 13-16 17 9 0 10 -66577
+-1 0;
+#X obj 181 101 cnv 15 40 15 patsellbl-send patsellbl-recv Pattern 5
+7 0 10 -195568 -1 0;
+#X obj 181 118 cnv 15 40 15 empty patsellbl-recv Selector 5 7 0 10
+-195568 -1 0;
+#X obj 266 117 OBSelPattBtn 3;
+#X obj 281 117 OBSelPattBtn 4;
+#X obj 296 117 OBSelPattBtn 5;
+#X obj 311 117 OBSelPattBtn 6;
+#X obj 356 117 OBSelPattBtn 9;
+#X obj 371 117 OBSelPattBtn 10;
+#X obj 386 117 OBSelPattBtn 11;
+#X obj 401 117 OBSelPattBtn 12;
+#X obj 416 117 OBSelPattBtn 13;
+#X obj 431 117 OBSelPattBtn 14;
+#X obj 446 117 OBSelPattBtn 15;
+#X obj 461 117 OBSelPattBtn 16;
+#X obj 326 117 OBSelPattBtn 7;
+#X obj 341 117 OBSelPattBtn 8;
+#X obj 236 117 OBSelPattBtn 1;
+#X obj 251 117 OBSelPattBtn 2;
+#X obj 254 144 clone -s 0 OBSelPattBtnClone 64;
+#X obj 212 16 inlet;
+#X obj 213 38 t b;
+#X obj 214 78 t b;
+#X obj 214 58 delay 50;
+#X obj 274 58 r firstpattern;
+#X obj 254 191 outlet;
+#X obj 254 168 t b;
+#X obj 102 101 cnv 15 40 15 patsellbl-send patsellbl-recv Bank 5 7
+0 10 -195568 -1 0;
+#X obj 105 116 OBpBankItem 1;
+#X obj 123 116 OBpBankItem 2;
+#X obj 141 116 OBpBankItem 3;
+#X obj 106 142 OBpBankItem 0;
+#X obj 159 116 OBpBankItem 4;
+#N canvas 308 61 450 300 OBSelCurrentPatternBank 0;
+#X obj 33 133 hradio 15 1 0 5 empty empty Bank 0 -8 0 10 -99865 -1
+-1 0;
+#X obj 34 197 s selectedpbankitem;
+#X obj 33 8 r 1-pbankbang;
+#X obj 66 28 r 2-pbankbang;
+#X obj 97 50 r 3-pbankbang;
+#X obj 60 177 s pbank;
+#X obj 131 71 r 4-pbankbang;
+#X obj 33 177 t f;
+#X msg 33 28 0;
+#X msg 66 47 1;
+#X msg 97 71 2;
+#X msg 131 91 3;
+#X obj 33 156 + 1;
+#X obj 61 158 t f;
+#X obj 33 48 t f;
+#X obj 66 67 t f;
+#X obj 97 92 t f;
+#X obj 131 111 t f;
+#X connect 0 0 13 0;
+#X connect 0 0 12 0;
+#X connect 2 0 8 0;
+#X connect 3 0 9 0;
+#X connect 4 0 10 0;
+#X connect 6 0 11 0;
+#X connect 7 0 1 0;
+#X connect 8 0 14 0;
+#X connect 9 0 15 0;
+#X connect 10 0 16 0;
+#X connect 11 0 17 0;
+#X connect 12 0 7 0;
+#X connect 13 0 5 0;
+#X connect 14 0 0 0;
+#X connect 15 0 0 0;
+#X connect 16 0 0 0;
+#X connect 17 0 0 0;
+#X restore 39 77 pd OBSelCurrentPatternBank;
+#X obj 104 14 loadbang;
+#X obj 87 49 t b;
+#X obj 274 79 t b b;
+#X connect 23 0 30 0;
+#X connect 24 0 25 0;
+#X connect 25 0 27 0;
+#X connect 26 0 21 0;
+#X connect 27 0 26 0;
+#X connect 28 0 40 0;
+#X connect 30 0 29 0;
+#X connect 38 0 39 0;
+#X connect 39 0 32 0;
+#X connect 40 0 32 0;
+#X connect 40 1 21 0;
+#X coords 0 -1 1 1 378 35 2 100 100;
