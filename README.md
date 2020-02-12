@@ -4,7 +4,7 @@ Read Me Document contains most recent fixes and additions. For known bugs scroll
 - Recent Fixes and additions
 
 Fixes 2/8/2020
--	Pattern and sequence selector remodled and patterns can be changed on the fly with very little delay if any at all.
+-	Pattern and sequence selector remodled. Patterns can be changed on the fly with very little delay if any at all.
 -	Small corretions made to recieve sequencer steps for the metronome.
 -	Red error messages in pd due to [r checkpadnum] = 0 inside the metronome patch. Red messages>>>> text set: line number (-1) < 0 (Fixed)
 
@@ -78,4 +78,4 @@ Sequencer -
 
 Metronome -
 
-- 	No known bugs
+- 	Long periods of time after selecting a new pattern or sequence.
