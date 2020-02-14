@@ -142,6 +142,8 @@
 #X coords 0 -1 1 1 150 64 2 0 0;
 #X restore 443 98 pd AssignColorSettings7;
 #X obj 152 61 t b;
+#X obj 101 150 outlet;
+#X connect 0 0 7 0;
 #X connect 1 0 6 0;
 #X connect 6 0 0 0;
 #X coords 0 -1 1 1 15 15 2 100 100;
