@@ -137,9 +137,11 @@
 #X obj 101 101 bng 13 250 50 0 \$1-pbankbang empty empty 17 7 0 10
 -262144 -1 -1;
 #X obj 100 74 inlet;
-#X obj 100 100 cnv 15 15 15 empty seqborder-recv empty 20 12 0 14 -99865
+#X obj 100 100 cnv 15 15 15 empty seqborder-recv empty 20 12 0 14 -66577
 -66577 0;
 #X obj 103 103 cnv 9 9 9 \$1-pbankitem-send \$1-pbankitem-recv empty
-20 12 0 14 -166441 -66577 0;
+20 12 0 14 -44926 -66577 0;
+#X obj 115 149 outlet;
+#X connect 2 0 6 0;
 #X connect 3 0 2 0;
 #X coords 0 -1 1 1 15 15 2 100 100;
