@@ -1,4 +1,4 @@
-#N canvas 0 0 712 810 10;
+#N canvas -4 -4 1440 818 10;
 #X obj 35 98 text size \$0-sequences;
 #X obj 34 159 text get \$0-sequences;
 #X obj 36 470 s swing-recv;
@@ -199,11 +199,11 @@
 #X text 708 223 project name;
 #X obj 814 557 text define -k \$0-newmastermixerfile;
 #A set 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0.5 0.5 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0.5 0.46 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_B1_Snare_SP.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
-\; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
+\; 0 0 0.5 0.5 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Kicks/1_A#5_Kick_SP.wav
+\; 0 0 0.5 0.5 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Snares/1_B1_Snare_SP.wav
+\; 0 0 0.5 0.5 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Hats&Shakers/1_A2_Hat_SP.wav
+\; 0 0 0.5 0.52 C:/SampleArchive/513TubeDrumHitsB866_Wav_SP/513TubeDrumHits_Wav_SP/Samples/Percussion/1_A#4_Perc_SP.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
 \; 0 0 0 0 projects/datafiles-donotdeleteoredit/defaultblanksample.wav
@@ -2367,9 +2367,9 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X floatatom 198 50 5 0 64 0 - - -;
 #X obj 650 349 r projectpatternnum;
 #X obj 393 364 text define -k \$0-sequences;
-#A set 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A set 1 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 \; 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+0 0 \; 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -2437,9 +2437,8 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #N canvas 76 222 1280 462 OBSendSteps 0;
 #X text 168 27 Send changes from doc to toggles;
 #X obj 24 24 inlet;
-#X obj 28 64 unpack f f f f f f f f f f f f f f f f f f f f f f f f
+#X obj 28 58 unpack f f f f f f f f f f f f f f f f f f f f f f f f
 f f f f f f f f, f 107;
-#X floatatom 27 159 5 0 0 0 - - -;
 #X obj 34 96 s seqstep0;
 #X obj 66 122 s seqstep1;
 #X obj 110 150 s seqstep2;
@@ -2472,42 +2471,66 @@ f f f f f f f f, f 107;
 #X obj 461 152 s seqstep18;
 #X obj 428 129 s seqstep17;
 #X obj 392 110 s seqstep16;
-#X floatatom 756 96 5 0 0 0 - - -;
+#X floatatom 33 133 5 0 0 0 - - -;
+#X floatatom 65 169 5 0 0 0 - - -;
+#X floatatom 110 182 5 0 0 0 - - -;
+#X floatatom 153 205 5 0 0 0 - - -;
+#X floatatom 195 227 5 0 0 0 - - -;
+#X floatatom 246 249 5 0 0 0 - - -;
+#X floatatom 279 273 5 0 0 0 - - -;
+#X floatatom 318 295 5 0 0 0 - - -;
+#X floatatom 370 316 5 0 0 0 - - -;
+#X floatatom 408 341 5 0 0 0 - - -;
+#X floatatom 450 363 5 0 0 0 - - -;
+#X floatatom 489 380 5 0 0 0 - - -;
+#X floatatom 525 400 5 0 0 0 - - -;
+#X connect 1 0 2 0;
 #X connect 2 0 3 0;
-#X connect 2 0 4 0;
-#X connect 2 1 5 0;
-#X connect 2 2 6 0;
-#X connect 2 3 7 0;
-#X connect 2 4 8 0;
-#X connect 2 5 9 0;
-#X connect 2 6 10 0;
-#X connect 2 7 11 0;
-#X connect 2 8 12 0;
-#X connect 2 9 13 0;
-#X connect 2 10 14 0;
-#X connect 2 11 15 0;
-#X connect 2 12 16 0;
-#X connect 2 13 17 0;
-#X connect 2 14 18 0;
-#X connect 2 15 19 0;
-#X connect 2 16 35 0;
-#X connect 2 17 34 0;
-#X connect 2 18 33 0;
-#X connect 2 19 32 0;
-#X connect 2 20 31 0;
-#X connect 2 21 30 0;
-#X connect 2 22 29 0;
-#X connect 2 23 28 0;
-#X connect 2 24 27 0;
-#X connect 2 25 26 0;
-#X connect 2 26 25 0;
-#X connect 2 27 24 0;
-#X connect 2 28 23 0;
-#X connect 2 29 22 0;
-#X connect 2 30 21 0;
-#X connect 2 31 20 0;
-#X connect 2 31 36 0;
-#X restore 407 657 pd OBSendSteps;
+#X connect 2 0 35 0;
+#X connect 2 1 4 0;
+#X connect 2 1 36 0;
+#X connect 2 2 5 0;
+#X connect 2 2 37 0;
+#X connect 2 3 6 0;
+#X connect 2 3 38 0;
+#X connect 2 4 7 0;
+#X connect 2 4 39 0;
+#X connect 2 5 8 0;
+#X connect 2 5 40 0;
+#X connect 2 6 9 0;
+#X connect 2 6 41 0;
+#X connect 2 7 10 0;
+#X connect 2 7 42 0;
+#X connect 2 8 11 0;
+#X connect 2 8 43 0;
+#X connect 2 9 12 0;
+#X connect 2 9 44 0;
+#X connect 2 10 13 0;
+#X connect 2 10 45 0;
+#X connect 2 11 14 0;
+#X connect 2 11 46 0;
+#X connect 2 12 15 0;
+#X connect 2 12 47 0;
+#X connect 2 13 16 0;
+#X connect 2 14 17 0;
+#X connect 2 15 18 0;
+#X connect 2 16 34 0;
+#X connect 2 17 33 0;
+#X connect 2 18 32 0;
+#X connect 2 19 31 0;
+#X connect 2 20 30 0;
+#X connect 2 21 29 0;
+#X connect 2 22 28 0;
+#X connect 2 23 27 0;
+#X connect 2 24 26 0;
+#X connect 2 25 25 0;
+#X connect 2 26 24 0;
+#X connect 2 27 23 0;
+#X connect 2 28 22 0;
+#X connect 2 29 21 0;
+#X connect 2 30 20 0;
+#X connect 2 31 19 0;
+#X restore 408 661 pd OBSendSteps;
 #N canvas 46 46 1073 596 OBRecieveSteps 0;
 #X obj 51 371 t b f;
 #X obj 89 371 t b f;
@@ -2736,73 +2759,8 @@ f f f f f f f f f f, f 179;
 #X connect 80 0 17 0;
 #X restore 404 166 pd OBRecieveSteps;
 #X obj 189 378 text define -k \$0-velocities;
-#A set 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-1 1 \; 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \; 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 \;;
-#X obj 189 599 list trim;
+#A set fgdgff;
+#X obj 199 658 list trim;
 #N canvas -8 -8 1276 686 OBSendVelocitySteps 0;
 #X obj 24 24 inlet;
 #X text 290 153 Send changes from doc to toggles;
@@ -2849,6 +2807,7 @@ f f f f f f f f, f 107;
 #X floatatom 235 247 5 0 0 0 - - -;
 #X floatatom 275 273 5 0 0 0 - - -;
 #X floatatom 311 291 5 0 0 0 - - -;
+#X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 0 36 0;
 #X connect 2 1 4 0;
@@ -2890,7 +2849,7 @@ f f f f f f f f, f 107;
 #X connect 2 30 20 0;
 #X connect 2 31 19 0;
 #X connect 2 31 35 0;
-#X restore 189 620 pd OBSendVelocitySteps;
+#X restore 199 679 pd OBSendVelocitySteps;
 #N canvas 130 50 1073 592 OBRecieveVelSteps 0;
 #X obj 51 371 t b f;
 #X obj 89 371 t b f;
@@ -3317,26 +3276,22 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X obj 147 38 inlet;
 #X obj 79 299 outlet;
 #X obj 60 192 pack \$1 \$2;
-#X obj 233 54 t f;
 #X obj 239 122 t f;
-#X obj 169 169 t f;
-#X connect 0 0 17 0;
+#X connect 0 0 16 0;
 #X connect 1 0 2 0;
 #X connect 2 0 14 0;
 #X connect 4 0 10 0;
 #X connect 5 0 15 0;
 #X connect 6 0 5 1;
 #X connect 7 0 8 1;
-#X connect 8 0 18 0;
+#X connect 8 0 15 1;
 #X connect 9 0 7 0;
 #X connect 10 0 6 0;
 #X connect 11 0 4 0;
-#X connect 12 0 16 0;
+#X connect 12 0 0 0;
 #X connect 13 0 5 0;
 #X connect 15 0 1 0;
-#X connect 16 0 0 0;
-#X connect 17 0 8 0;
-#X connect 18 0 15 1;
+#X connect 16 0 8 0;
 #X restore 34 106 pd OBWhenEditStateChanged;
 #X msg 34 235 write \$1;
 #X obj 34 208 t s;
@@ -3358,16 +3313,14 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 13 0 5 1;
 #X restore 404 343 pd OBWriteSequences;
 #X obj 404 320 t f;
-#X obj 210 429 r checkedpadnum;
-#X obj 407 450 r checkedpadnum;
+#X obj 208 446 r checkedpadnum;
+#X obj 430 422 r checkedpadnum;
 #X floatatom 243 238 5 0 0 0 - - -;
 #X obj 243 191 r checkedpadnum;
 #X floatatom 445 227 5 0 0 0 - - -;
-#X obj 445 207 t f;
 #X obj 445 187 r checkedpadnum;
 #X obj 243 261 t f;
 #X obj 445 247 t f;
-#X obj 243 215 t f;
 #X obj 394 12 r projectpatternnum;
 #X floatatom 394 53 5 0 64 0 - - -;
 #X obj 395 72 t f f;
@@ -3376,24 +3329,26 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X obj 404 300 r emodestate;
 #X obj 201 315 r emodestate;
 #X obj 201 335 t f;
-#X floatatom 407 471 5 0 0 0 - - -;
+#X floatatom 402 455 5 0 0 0 - - -;
 #X obj 393 394 t b p;
-#X floatatom 210 451 5 0 0 0 - - -;
-#X obj 407 580 t f;
-#X obj 189 558 t f;
+#X floatatom 196 474 5 0 0 0 - - -;
+#X obj 195 581 t f;
 #X obj 189 409 t b p;
-#X obj 407 536 f;
-#X floatatom 407 558 5 0 0 0 - - -;
-#X msg 407 513 bang;
-#X obj 407 491 t b f, f 8;
-#X obj 189 514 f;
-#X floatatom 189 536 5 0 0 0 - - -;
-#X msg 189 491 bang;
-#X obj 209 469 t b f;
-#X obj 407 626 list trim;
-#X obj 407 601 text get \$0-sequences 0 32;
-#X obj 189 578 text get \$0-velocities 0 32;
-#X msg 393 423 0;
+#X obj 402 520 f;
+#X floatatom 402 542 5 0 0 0 - - -;
+#X msg 402 497 bang;
+#X obj 402 475 t b f, f 8;
+#X obj 195 537 f;
+#X floatatom 195 559 5 0 0 0 - - -;
+#X msg 195 514 bang;
+#X obj 195 492 t b f;
+#X obj 408 635 list trim;
+#X msg 393 413 0;
+#X msg 189 429 0;
+#X obj 406 611 t l;
+#X obj 200 624 t l;
+#X obj 195 601 text get \$0-velocities 0 32;
+#X obj 402 585 text get \$0-sequences 0 32;
 #X connect 0 0 33 0;
 #X connect 1 0 34 0;
 #X connect 3 0 5 0;
@@ -3438,7 +3393,7 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 43 0 112 0;
 #X connect 44 0 47 0;
 #X connect 45 0 73 0;
-#X connect 46 0 144 0;
+#X connect 46 0 142 0;
 #X connect 46 1 44 3;
 #X connect 47 0 45 1;
 #X connect 49 0 38 0;
@@ -3499,57 +3454,57 @@ through tmpdataosbs-pat-64.txt Depending on the loaded pattern.;
 #X connect 113 0 114 0;
 #X connect 114 0 99 0;
 #X connect 115 0 12 0;
-#X connect 116 0 143 0;
-#X connect 118 0 149 0;
+#X connect 116 0 141 0;
+#X connect 118 0 147 0;
 #X connect 121 0 119 0;
 #X connect 121 1 128 2;
-#X connect 122 0 153 0;
+#X connect 122 0 150 0;
 #X connect 123 0 124 0;
 #X connect 125 0 126 0;
 #X connect 125 1 127 2;
 #X connect 127 0 122 0;
 #X connect 128 0 118 0;
 #X connect 129 0 128 0;
-#X connect 130 0 150 0;
-#X connect 131 0 148 0;
-#X connect 132 0 137 0;
-#X connect 133 0 139 0;
-#X connect 134 0 138 0;
+#X connect 130 0 148 0;
+#X connect 131 0 146 0;
+#X connect 132 0 136 0;
+#X connect 133 0 132 0;
+#X connect 134 0 137 0;
 #X connect 135 0 134 0;
-#X connect 136 0 135 0;
-#X connect 137 0 126 1;
-#X connect 138 0 119 1;
-#X connect 139 0 132 0;
-#X connect 140 0 141 0;
-#X connect 141 0 142 0;
-#X connect 142 0 8 0;
-#X connect 142 1 128 1;
-#X connect 143 0 43 0;
-#X connect 143 1 127 1;
-#X connect 144 0 44 0;
-#X connect 144 1 52 0;
-#X connect 145 0 129 0;
-#X connect 146 0 147 0;
-#X connect 147 0 127 0;
-#X connect 148 0 157 0;
-#X connect 149 0 165 0;
-#X connect 149 1 163 3;
+#X connect 136 0 126 1;
+#X connect 137 0 119 1;
+#X connect 138 0 139 0;
+#X connect 139 0 140 0;
+#X connect 140 0 8 0;
+#X connect 140 1 128 1;
+#X connect 141 0 43 0;
+#X connect 141 1 127 1;
+#X connect 142 0 44 0;
+#X connect 142 1 52 0;
+#X connect 143 0 129 0;
+#X connect 144 0 145 0;
+#X connect 145 0 127 0;
+#X connect 146 0 154 0;
+#X connect 147 0 160 0;
+#X connect 147 1 165 3;
+#X connect 148 0 158 0;
+#X connect 149 0 164 0;
 #X connect 150 0 161 0;
-#X connect 151 0 163 0;
-#X connect 152 0 164 0;
-#X connect 153 0 160 0;
-#X connect 153 1 164 3;
-#X connect 154 0 155 0;
-#X connect 155 0 151 0;
-#X connect 156 0 154 0;
-#X connect 157 0 156 0;
-#X connect 157 1 154 1;
-#X connect 158 0 159 0;
-#X connect 159 0 152 0;
-#X connect 160 0 158 0;
-#X connect 161 0 160 0;
-#X connect 161 1 158 1;
-#X connect 162 0 120 0;
-#X connect 163 0 162 0;
-#X connect 164 0 123 0;
-#X connect 165 0 148 0;
+#X connect 150 1 164 3;
+#X connect 151 0 152 0;
+#X connect 152 0 165 0;
+#X connect 153 0 151 0;
+#X connect 154 0 153 0;
+#X connect 154 1 151 1;
+#X connect 155 0 156 0;
+#X connect 156 0 149 0;
+#X connect 157 0 155 0;
+#X connect 158 0 157 0;
+#X connect 158 1 155 1;
+#X connect 159 0 120 0;
+#X connect 160 0 146 0;
+#X connect 161 0 148 0;
+#X connect 162 0 159 0;
+#X connect 163 0 123 0;
+#X connect 164 0 163 0;
+#X connect 165 0 162 0;
