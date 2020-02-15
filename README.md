@@ -1,11 +1,18 @@
 OverBlast is a work in progress "WIP"
 Read Me Document contains most recent fixes and additions. For known bugs scroll to the bottom.
 
-- Recent Fixes and additions
-Fixes 3/14/2020
+- Recent fixes and additions
+Fixes 2/15/2020
+- 	Songbuilder data is written properly for 16 items in the playlist. Still a bit buggy when changing pages on the song playlist
+-	Remove unneeded code from SequencerTrk
+-	Connection managment for metronome.
+
+Fixes 2/14/2020
 -	Long periods of time after selecting a new pattern or sequence. (Fixed)
 -	Will overwrite data of newly selected sequence with previously selected data. (Fixed)
 - 	Steps do not updated when a sequence is changed. (Fixed)
+-	Modifications to accomidate sequence changes.
+
 
 Fixes 2/8/2020
 -	Pattern and sequence selector remodled. Patterns can be changed on the fly with very little delay if any at all.
