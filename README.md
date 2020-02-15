@@ -2,6 +2,10 @@ OverBlast is a work in progress "WIP"
 Read Me Document contains most recent fixes and additions. For known bugs scroll to the bottom.
 
 - Recent Fixes and additions
+Fixes 3/14/2020
+-	Long periods of time after selecting a new pattern or sequence. (Fixed)
+-	Will overwrite data of newly selected sequence with previously selected data. (Fixed)
+- 	Steps do not updated when a sequence is changed. (Fixed)
 
 Fixes 2/8/2020
 -	Pattern and sequence selector remodled. Patterns can be changed on the fly with very little delay if any at all.
@@ -68,8 +72,7 @@ Sample Editor -
 - Trucate button can be buggy.
 
 Sequencer - 
-
-- 	Steps do not updated when a sequence is changed.
+- 	text get: field request (0 32) out of range in console multipule times when the patch is first loaded.
 - 	One shot and loop toggles not working. Not developed at all as of yet. 
 - 	Fade in and fade out sliders not working. Not developed at all as of yet. 
 - 	Effects are not working. Not developed at all as of yet. 
@@ -78,4 +81,4 @@ Sequencer -
 
 Metronome -
 
-- 	Long periods of time after selecting a new pattern or sequence.
+- 	No known bugs
