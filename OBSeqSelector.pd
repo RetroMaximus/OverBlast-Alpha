@@ -1,4 +1,4 @@
-#N canvas 0 50 697 300 10;
+#N canvas 45 124 697 300 10;
 #X obj 100 100 cnv 15 378 35 empty seqsel-recv empty 20 12 0 14 -195568
 -66577 0;
 #X obj 236 101 cnv 15 60 15 seqtab-send seqtab-recv 1-4 22 9 0 10 -166441
@@ -13,18 +13,16 @@
 5 7 0 10 -195568 -1 0;
 #X obj 181 118 cnv 15 40 15 empty seqsellbl-recv Selector 5 7 0 10
 -195568 -1 0;
-#X obj 212 16 inlet;
-#X obj 213 38 t b;
 #X obj 102 101 cnv 15 40 15 patsellbl-send patsellbl-recv Bank 5 7
 0 10 -195568 -1 0;
-#X obj 106 142 OBsBankItem 0;
+#X obj 72 114 OBsBankItem 0;
 #X obj 105 116 OBsBankItem 1;
 #X obj 123 116 OBsBankItem 2;
 #X obj 140 116 OBsBankItem 3;
 #X obj 159 116 OBsBankItem 4;
 #N canvas 308 61 450 300 OBSelCurrentSequenceBank 0;
 #X obj 33 133 hradio 15 1 0 5 empty empty Bank 0 -8 0 10 -99865 -1
--1 1;
+-1 0;
 #X obj 33 177 t f;
 #X msg 33 28 0;
 #X msg 66 47 1;
@@ -77,26 +75,21 @@
 #X obj 446 117 OBSelSeqBtn 15;
 #X obj 461 117 OBSelSeqBtn 16;
 #X obj 266 117 OBSelSeqBtn 3;
-#X obj 214 78 t b b b b;
-#X obj 200 322 s selectedseqitem;
-#X obj 141 266 pack f f;
-#X obj 145 291 unpack f f;
-#X obj 159 221 t b f;
-#X obj 132 173 t b b;
-#X msg 159 196 1;
-#X msg 141 244 0;
-#X connect 7 0 8 0;
-#X connect 8 0 33 0;
-#X connect 11 0 38 0;
-#X connect 12 0 38 0;
-#X connect 13 0 38 0;
-#X connect 14 0 38 0;
-#X connect 33 0 11 0;
-#X connect 35 0 36 0;
-#X connect 37 0 40 0;
-#X connect 37 1 35 1;
-#X connect 38 0 17 0;
-#X connect 38 1 39 0;
-#X connect 39 0 37 0;
-#X connect 40 0 35 0;
+#X msg 144 166 bang;
+#X obj 144 209 s;
+#X msg 159 189 symbol 1-seqbang;
+#X obj 105 228 s selectedseqitem;
+#X msg 105 165 1;
+#X obj 105 144 t b b b b;
+#X connect 9 0 36 0;
+#X connect 10 0 36 0;
+#X connect 11 0 36 0;
+#X connect 12 0 36 0;
+#X connect 31 0 32 0;
+#X connect 33 0 32 1;
+#X connect 35 0 34 0;
+#X connect 36 0 35 0;
+#X connect 36 1 33 0;
+#X connect 36 2 31 0;
+#X connect 36 3 31 0;
 #X coords 0 -1 1 1 378 35 2 100 100;

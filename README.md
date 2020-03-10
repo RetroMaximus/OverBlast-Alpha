@@ -2,6 +2,11 @@ OverBlast is a work in progress "WIP"
 Read Me Document contains most recent fixes and additions. For known bugs scroll to the bottom.
 
 - Recent fixes and additions
+
+ Fixes 3/10/2020
+ -	Will overwrite data of newly selected sequence with previously selected data. (Fixed)
+ - 	Many small fixes across the whole patch.
+ 
 Fixes 2/15/2020
 - 	Songbuilder data is written properly for 16 items in the playlist. Still a bit buggy when changing pages on the song playlist
 -	Remove unneeded code from SequencerTrk
@@ -63,9 +68,13 @@ Recently fix but incase these errors show again. A lot of red messages when Over
 first starts indicating pattern or velocity default files are missing you should do the following.
 Click Create_New button to create temp default files then close and reopen Overblast.
 
+Pattern Selector -
+
+-	velocity request (0 32) out of range in console when the pattern bank is changed.
+
 Sequence Selector -
 
--	Will overwrite data of newly selected sequence with previously selected data.
+-	No known Bugs
 
 Song Playlist -
 
@@ -79,7 +88,7 @@ Sample Editor -
 - Trucate button can be buggy.
 
 Sequencer - 
-- 	text get: field request (0 32) out of range in console multipule times when the patch is first loaded.
+
 - 	One shot and loop toggles not working. Not developed at all as of yet. 
 - 	Fade in and fade out sliders not working. Not developed at all as of yet. 
 - 	Effects are not working. Not developed at all as of yet. 
