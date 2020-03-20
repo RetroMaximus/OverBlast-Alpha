@@ -1,4 +1,4 @@
-#N canvas 778 88 460 485 10;
+#N canvas -4 -4 1280 718 10;
 #X obj 101 100 bng 13 250 50 0 \$1-seqbang empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 100 100 cnv 15 15 15 \$1-radioseqitem-send \$1-radioseqitem-recv

@@ -2,8 +2,13 @@ OverBlast is a work in progress "WIP"
 Read Me Document contains most recent fixes and additions. For known bugs scroll to the bottom.
 
 - Recent fixes and additions
-
- Fixes 3/10/2020
+ 
+Fixes 3/19/2020
+-	Added a humanize feature to the metronome to allow for a more authentic groove to the sequence.
+	(Hint* adding more swing to the sequence will make the humanize feature more noticeable.)
+-	Added midi in feature this is still going under testing but a good bulk of the coding has been done.
+-	
+Fixes 3/10/2020
  -	Will overwrite data of newly selected sequence with previously selected data. (Fixed)
  - 	Many small fixes across the whole patch.
  

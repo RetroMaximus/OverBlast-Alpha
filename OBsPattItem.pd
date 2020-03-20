@@ -1,4 +1,4 @@
-#N canvas -4 -4 1440 818 10;
+#N canvas -4 -4 1284 766 10;
 #X obj 2 3 bng 27 250 50 0 \$1-songitembang empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 40 19 bng 20 250 50 0 \$1-songitembang2 empty empty 17 7 0 10
@@ -219,6 +219,8 @@ Reps 0 -8 0 10 -262144 -1 -1 1 256;
 #X obj 468 50 r \$1-songitembang3;
 #X obj 391 28 t b b;
 #X obj 448 150 s selsongcoloritem;
+#X msg 199 39 1;
+#X msg 233 38 0;
 #X connect 5 0 25 0;
 #X connect 5 0 45 0;
 #X connect 6 0 26 0;
@@ -271,4 +273,6 @@ Reps 0 -8 0 10 -262144 -1 -1 1 256;
 #X connect 49 0 50 0;
 #X connect 50 0 29 0;
 #X connect 50 1 44 0;
+#X connect 52 0 14 0;
+#X connect 53 0 14 0;
 #X coords 0 -1 1 1 62 62 2 0 0;

@@ -1,3 +1,3 @@
-#N canvas 261 57 1044 539 10;
+#N canvas 135 43 1044 539 10;
 #X obj 1 1 OverBlast-Alpha;
 #X coords 0 -1 1 1 1024 500 2 0 0;

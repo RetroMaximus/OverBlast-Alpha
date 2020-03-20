@@ -1,4 +1,4 @@
-#N canvas 45 124 697 300 10;
+#N canvas 433 152 698 300 10;
 #X obj 100 100 cnv 15 378 35 empty seqsel-recv empty 20 12 0 14 -195568
 -66577 0;
 #X obj 236 101 cnv 15 60 15 seqtab-send seqtab-recv 1-4 22 9 0 10 -166441
@@ -58,7 +58,6 @@
 #X connect 14 0 4 0;
 #X connect 15 0 5 0;
 #X restore 39 77 pd OBSelCurrentSequenceBank;
-#X obj 293 145 clone -s 0 OBSelSeqBtnClone 64;
 #X obj 236 117 OBSelSeqBtn 1;
 #X obj 251 117 OBSelSeqBtn 2;
 #X obj 281 117 OBSelSeqBtn 4;
@@ -81,15 +80,17 @@
 #X obj 105 228 s selectedseqitem;
 #X msg 105 165 1;
 #X obj 105 144 t b b b b;
-#X connect 9 0 36 0;
-#X connect 10 0 36 0;
-#X connect 11 0 36 0;
-#X connect 12 0 36 0;
-#X connect 31 0 32 0;
-#X connect 33 0 32 1;
+#X obj 293 153 clone -s 0 OBSelSeqBtnClone 64;
+#X obj 291 205 clone -s 0 OBMidiSettingsClone 64;
+#X connect 9 0 35 0;
+#X connect 10 0 35 0;
+#X connect 11 0 35 0;
+#X connect 12 0 35 0;
+#X connect 30 0 31 0;
+#X connect 32 0 31 1;
+#X connect 34 0 33 0;
 #X connect 35 0 34 0;
-#X connect 36 0 35 0;
-#X connect 36 1 33 0;
-#X connect 36 2 31 0;
-#X connect 36 3 31 0;
+#X connect 35 1 32 0;
+#X connect 35 2 30 0;
+#X connect 35 3 30 0;
 #X coords 0 -1 1 1 378 35 2 100 100;
